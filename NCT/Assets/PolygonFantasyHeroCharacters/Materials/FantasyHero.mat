@@ -130,15 +130,16 @@ Material:
     - _Color1: {r: 0.2283196, g: 0.5822246, b: 0.7573529, a: 1}
     - _Color_BodyArt: {r: 0.5294118, g: 0.30980393, b: 0.64705884, a: 0}
     - _Color_Eyes: {r: 0, g: 0, b: 0, a: 1}
-    - _Color_Hair: {r: 0.8000001, g: 0.8196079, b: 0.8078432, a: 0}
-    - _Color_Leather_Primary: {r: 0.30882353, g: 0.21390574, b: 0.1589533, a: 0}
-    - _Color_Leather_Secondary: {r: 0.372549, g: 0.3294118, b: 0.2784314, a: 0}
-    - _Color_Metal_Dark: {r: 0.1660359, g: 0.21904722, b: 0.27205884, a: 0}
-    - _Color_Metal_Primary: {r: 0.69803923, g: 0.6509804, b: 0.61960787, a: 0}
+    - _Color_Hair: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0}
+    - _Color_Leather_Primary: {r: 0.38679248, g: 0.3719472, b: 0.33388218, a: 0}
+    - _Color_Leather_Secondary: {r: 0.9716981, g: 0.9347227, b: 0.7654414, a: 0}
+    - _Color_Metal_Dark: {r: 0.8679245, g: 0.8679245, b: 0.72463506, a: 0}
+    - _Color_Metal_Primary: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 0}
     - _Color_Metal_Secondary: {r: 0.3921569, g: 0.4039216, b: 0.41176474, a: 0}
-    - _Color_Primary: {r: 0.68235296, g: 0.43921572, b: 0.21960786, a: 0}
+    - _Color_Primary: {r: 0.9528302, g: 0.9528302, b: 0.7685564, a: 0}
     - _Color_Scar: {r: 1, g: 0.13333344, b: 0, a: 0}
-    - _Color_Secondary: {r: 0.2392157, g: 0.2509804, b: 0.18823531, a: 0}
+    - _Color_Secondary: {r: 0.9339623, g: 0.8917955, b: 0.63879496, a: 0}
     - _Color_Skin: {r: 1, g: 0.8000001, b: 0.68235296, a: 0}
     - _Color_Stubble: {r: 0.80392164, g: 0.7019608, b: 0.6313726, a: 0}
     - _Color_Tertiary: {r: 0.7352941, g: 0.20004326, b: 0.20004326, a: 1}
+  m_BuildTextureStacks: []
