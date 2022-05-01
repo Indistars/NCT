@@ -4731,9 +4731,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1654679657174497209, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ef30206b02f58a94da58eeb30266c622, type: 2}
     - target: {fileID: 1702749280055254167, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4760,15 +4760,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1705455774902598477, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1705455774902598477, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1705455774902598477, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1705455774902598477, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4800,7 +4800,7 @@ GameObject:
   - component: {fileID: 1638499868}
   - component: {fileID: 1638499867}
   m_Layer: 0
-  m_Name: Character
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
