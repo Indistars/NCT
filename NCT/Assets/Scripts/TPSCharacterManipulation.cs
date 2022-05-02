@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class TPSCharacterManipulation : MonoBehaviour
 {
+    [SerializeField] private KeyCode runKeyCode; // 달리기 키 코드
+
     [SerializeField] private Transform playerBody; // 플레이어 모델을 관리할 변수
     [SerializeField] private Transform cameraArm;  // 카메라 암 회전을 관리할 변수
+
+    [SerializeField] private float speed;    // 플레이어 속도
+    [SerializeField] private float runSpeed; // 플레이어 달리기 속도
 
     Animator animator;
 
@@ -26,7 +31,7 @@ public class TPSCharacterManipulation : MonoBehaviour
     {
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")); // 이동 입력 값을 가져옴
         bool isMove = moveInput.magnitude != 0;
-        animator.SetBool("isMove", isMove); // 이동 입력 값의 유무를 애니메이션에 적용
+        // animator.SetBool("isMove", isMove); // 이동 입력 값의 유무를 애니메이션에 적용
         if (isMove) // 움직이고 있을 때 실행되는 함수
         {
             Vector3 lookForward = new Vector3(cameraArm.forward.x, 0f, cameraArm.forward.z).normalized; // 카메라의 정면을 평면화 시켜 저장
@@ -35,7 +40,20 @@ public class TPSCharacterManipulation : MonoBehaviour
 
             // characterBody.forward = lookForward; // 캐릭터가 이동할 때 카메라가 바라보는 방향 바라보게 하기
             playerBody.forward = moveDir; // 캐릭터가 이동할 때 이동 방향을 바라보게 하기 
-            transform.position += moveDir * Time.deltaTime * 5f;
+            if (Input.GetKey(runKeyCode))
+            {
+                animator.SetFloat("MoveSpeed", 1f);
+                transform.position += moveDir * Time.deltaTime * runSpeed;
+            }
+            else
+            {
+                animator.SetFloat("MoveSpeed", 0.5f);
+                transform.position += moveDir * Time.deltaTime * speed;
+            }
+        }
+        else
+        {
+            animator.SetFloat("MoveSpeed", 0);
         }
     }
 

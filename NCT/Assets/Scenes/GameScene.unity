@@ -4726,6 +4726,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1638499868}
     m_Modifications:
+    - target: {fileID: 1602367322762633749, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1654679657174497209, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
       propertyPath: m_Controller
       value: 
@@ -4799,6 +4803,10 @@ PrefabInstance:
     - target: {fileID: 100960, guid: 038320a534bd8b444b43734860d1a211, type: 3}
       propertyPath: m_Name
       value: ModularCharacters
+      objectReference: {fileID: 0}
+    - target: {fileID: 100960, guid: 038320a534bd8b444b43734860d1a211, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400960, guid: 038320a534bd8b444b43734860d1a211, type: 3}
       propertyPath: m_RootOrder
@@ -4879,8 +4887,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5fd8fca9d32c8444b674d085685163a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runKeyCode: 304
   playerBody: {fileID: 1376242434}
   cameraArm: {fileID: 85859488}
+  speed: 5
+  runSpeed: 7
 --- !u!4 &1638499868
 Transform:
   m_ObjectHideFlags: 0
