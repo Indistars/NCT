@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JoomCamera : MonoBehaviour
+public class ZoomCamera : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera; // 움직일 카메라
 
