@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// 데모씬 스크립트
+/// </summary>
 public class FeatureTest : MonoBehaviour
 {
     string log;

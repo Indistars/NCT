@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// 싱글톤 패턴
+/// </summary>
+/// <typeparam name="T">싱글톤 패턴을 사용하기 위해 적용될 클래스</typeparam>
 public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
     private static object syncObject = new object();

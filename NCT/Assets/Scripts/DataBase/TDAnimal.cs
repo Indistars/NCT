@@ -4,6 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// TDAnimal 클래스
+/// </summary>
 public class TDAnimal : TableBase
 {
     public int Key;
@@ -14,6 +17,11 @@ public class TDAnimal : TableBase
     public List<string> Success_Comment = new List<string>();
     public string Description;
 
+    /// <summary>
+    /// 데이터 파싱하는 부분
+    /// </summary>
+    /// <param name="key">키값</param>
+    /// <param name="info">키값을 제외한 나머지 값들</param>
     public override void SetJsonData(string key, JObject info)
     {
         base.SetJsonData(key, info);
