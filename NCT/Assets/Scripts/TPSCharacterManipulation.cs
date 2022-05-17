@@ -12,6 +12,8 @@ public class TPSCharacterManipulation : MonoBehaviour
     [SerializeField] private float speed;    // 플레이어 속도
     [SerializeField] private float runSpeed; // 플레이어 달리기 속도
 
+    [SerializeField] private float sensitivity; // 마우스 감도
+
     Animator animator;
 
     // Start is called before the first frame update
@@ -75,6 +77,6 @@ public class TPSCharacterManipulation : MonoBehaviour
             x = Mathf.Clamp(x, 335f, 361f);
         }
 
-        cameraArm.rotation = Quaternion.Euler(camAngle.x - mouseDelta.y, camAngle.y + mouseDelta.x, camAngle.z); // 카메라의 Rotation 값 변환
+        cameraArm.rotation = Quaternion.Euler(camAngle.x - mouseDelta.y , camAngle.y + mouseDelta.x * sensitivity, camAngle.z); // 카메라의 Rotation 값 변환
     }
 }
