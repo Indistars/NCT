@@ -11,7 +11,7 @@ public class Interaction : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E) && isIntercation)
         {
-            Interactioning(go);
+            Interracting(go);
         }
     }
 
