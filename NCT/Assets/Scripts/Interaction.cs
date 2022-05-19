@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    bool isIntercation; //Á¶»ç°¡ °¡´ÉÇÑÁö ³ªÅ¸³»´Â bool
-    GameObject go;      //Á¶»çÇÒ ¿ÀºêÁ§Æ®¸¦ ³Ö¾îµÎ´Â ÀÓ½Ã º¯¼ö
+    bool isIntercation; //ì¡°ì‚¬ê°€ ê°€ëŠ¥í•œì§€ ë‚˜íƒ€ë‚´ëŠ” bool
+    GameObject go;      //ì¡°ì‚¬í•  ì˜¤ë¸Œì íŠ¸ë¥¼ ë„£ì–´ë‘ëŠ” ì„ì‹œ ë³€ìˆ˜
 
     private void Update()
     {
@@ -16,31 +16,31 @@ public class Interaction : MonoBehaviour
     }
 
 
-    void Interactioning(GameObject ob)
+    void Interracting(GameObject ob)
     {
         Debug.Log(ob);
     }
 
     private void OnTriggerStay(Collider collider)
     {
-        Vector3 forward = transform.TransformDirection(Vector3.forward); // Ä³¸¯ÅÍÀÇ ¾Õ ¹æÇâ º¤ÅÍ
-        if (Physics.Raycast(transform.position, forward, 10) && collider.CompareTag("Animal")) // Ä³¸¯ÅÍ°¡ ¹Ù¶óº¸°í ÀÖ°í, µ¿¹°ÀÏ °æ¿ì
+        Vector3 forward = transform.TransformDirection(Vector3.forward); // ìºë¦­í„°ì˜ ì• ë°©í–¥ ë²¡í„°
+        if (Physics.Raycast(transform.position, forward, 10) && collider.CompareTag("Animal")) // ìºë¦­í„°ê°€ ë°”ë¼ë³´ê³  ìˆê³ , ë™ë¬¼ì¼ ê²½ìš°
         {
-            collider.GetComponent<Outline>().enabled = true; // Outline È°¼ºÈ­
-            isIntercation = true;   //Á¶»ç°¡´É
+            collider.GetComponent<Outline>().enabled = true; // Outline í™œì„±í™”
+            isIntercation = true;   //ì¡°ì‚¬ê°€ëŠ¥
 
-            go = collider.transform.parent.gameObject;  //mesh ¿ÀºêÁ§Æ®ÀÇ ºÎ¸ğ ¿ÀºêÁ§Æ® ¹Ş¾Æ¿À±â
+            go = collider.transform.parent.gameObject;  //mesh ì˜¤ë¸Œì íŠ¸ì˜ ë¶€ëª¨ ì˜¤ë¸Œì íŠ¸ ë°›ì•„ì˜¤ê¸°
         }
     }
 
     private void OnTriggerExit(Collider collider)
     {
-        isIntercation = false;  //Á¶»ç ºÒ°¡´É
+        isIntercation = false;  //ì¡°ì‚¬ ë¶ˆê°€ëŠ¥
 
-        if (collider.CompareTag("Animal")) // µ¿¹°ÀÏ °æ¿ì
+        if (collider.CompareTag("Animal")) // ë™ë¬¼ì¼ ê²½ìš°
         {
-            go = null;  //°´Ã¼ ÃÊ±âÈ­
-            collider.GetComponent<Outline>().enabled = false; // Outline ºñÈ°¼ºÈ­
+            go = null;  //ê°ì²´ ì´ˆê¸°í™”
+            collider.GetComponent<Outline>().enabled = false; // Outline ë¹„í™œì„±í™”
         }
     }
 }
