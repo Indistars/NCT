@@ -23,15 +23,25 @@ public class ZoomCamera : MonoBehaviour
 
             if (mainCamera.fieldOfView <= zoomMin) // 줌 최솟값
             {
-                mainCamera.fieldOfView = 60; // fieldOfView의 기본값
-                mainCamera.transform.localPosition = new Vector3(0, 0, 0.5f); // 1인칭 변경
+                setFPS(); // FPS 변경
             }
         }
 
         else if (mainCamera.transform.localPosition.z == 0.5f && mouseWheelForce > 0) // 마우스 휠을 뒤로 했고, 1인칭 관점일 때
         {
-            mainCamera.fieldOfView = zoomMin; // 3인칭 관점에서 최소 확대값으로 변경
-            mainCamera.transform.localPosition = new Vector3(0, 0, -4f); // 3인칭 변경
+            setTPS(); // TPS 변경
         }
+    }
+
+    public void setFPS()
+    {
+        mainCamera.fieldOfView = 60; // fieldOfView의 기본값
+        mainCamera.transform.localPosition = new Vector3(0, 0, 0.5f); // 1인칭 변경
+    }
+
+    public void setTPS()
+    {
+        mainCamera.fieldOfView = zoomMin; // 3인칭 관점에서 최소 확대값으로 변경
+        mainCamera.transform.localPosition = new Vector3(0, 0, -4f); // 3인칭 변경
     }
 }
