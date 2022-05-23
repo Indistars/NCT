@@ -42,6 +42,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 39.46835443037975
   m_ID: 1
+--- !u!114 &-9097790594641663036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 9.435483870967742
+  m_ID: 1
 --- !u!114 &-9080006807485540522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,6 +350,48 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 60.35443037974684
+  m_ID: 1
+--- !u!114 &-8499232293674670536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 16.20967741935484
+  m_ID: 1
+--- !u!114 &-8448308173237095329
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 36.04838709677419
+  m_ID: 1
+--- !u!114 &-8282024054148358919
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 26.85483870967742
   m_ID: 1
 --- !u!114 &-8217755376358014857
 MonoBehaviour:
@@ -788,6 +844,99 @@ MonoBehaviour:
     - {fileID: 4392867248356453819}
     - {fileID: 8957977359556094359}
     - {fileID: -4609397989445577242}
+    - {fileID: -5766986704049795900}
+    - {fileID: 9040181381713355117}
+    - {fileID: -4764832876337979668}
+    - {fileID: -6418829643783853737}
+    - {fileID: 1034916848750927140}
+    - {fileID: -6934775895003124611}
+    - {fileID: -4161954134309778559}
+    - {fileID: -5839998009469185223}
+    - {fileID: 9171602572738296713}
+    - {fileID: 3233839415588212820}
+    - {fileID: -1058714296549245329}
+    - {fileID: 2863066849454249167}
+    - {fileID: 8666296486806126251}
+    - {fileID: 5036341471781253932}
+    - {fileID: -2022950151808059738}
+    - {fileID: 6050985520393217019}
+    - {fileID: 5045718547196731836}
+    - {fileID: -5716698421958127198}
+    - {fileID: -1627520653689180599}
+    - {fileID: -3205635462729598869}
+    - {fileID: -9097790594641663036}
+    - {fileID: 461057196370970514}
+    - {fileID: 4124224042022268817}
+    - {fileID: -1436864836157032837}
+    - {fileID: -2009640920912972220}
+    - {fileID: -2301484050480444551}
+    - {fileID: -5007096279750226211}
+    - {fileID: -3688362331497718269}
+    - {fileID: -7151408173442756182}
+    - {fileID: 7019215261085261778}
+    - {fileID: -583119103085160429}
+    - {fileID: 6366875287610388225}
+    - {fileID: -4893943652362577890}
+    - {fileID: 524530004751637280}
+    - {fileID: -8499232293674670536}
+    - {fileID: 1142767453424453403}
+    - {fileID: -2565998645903102899}
+    - {fileID: -192366202553666202}
+    - {fileID: 7322308748832685204}
+    - {fileID: 5944720607097012842}
+    - {fileID: 8571280752800415024}
+    - {fileID: 304277954413367082}
+    - {fileID: 735850480957323218}
+    - {fileID: 8859996117973815603}
+    - {fileID: 5469068950759091195}
+    - {fileID: -5849023575857977751}
+    - {fileID: 7991309915417401593}
+    - {fileID: 8116234423672396747}
+    - {fileID: 3380738472041114408}
+    - {fileID: -1795931958951191506}
+    - {fileID: 5780850394269881739}
+    - {fileID: -6796881583781172194}
+    - {fileID: -909636029703736040}
+    - {fileID: -4208063989717110106}
+    - {fileID: 7105726261879383320}
+    - {fileID: 5169282418788224698}
+    - {fileID: -8282024054148358919}
+    - {fileID: -7118973279158111002}
+    - {fileID: 7429026584803767003}
+    - {fileID: -1806810833191208617}
+    - {fileID: 4968768100011096458}
+    - {fileID: -5867323010575213364}
+    - {fileID: 8467901778276355142}
+    - {fileID: -1484331695764592854}
+    - {fileID: -5163553685533996725}
+    - {fileID: 70864046783254492}
+    - {fileID: 561141536546400881}
+    - {fileID: 8043634990679540893}
+    - {fileID: -3670000136904835694}
+    - {fileID: 7752594528079681573}
+    - {fileID: 631410117695198588}
+    - {fileID: 6523954170278733707}
+    - {fileID: 494032223752136967}
+    - {fileID: -242989516783692258}
+    - {fileID: 3636705341192018898}
+    - {fileID: -8448308173237095329}
+    - {fileID: 6820483938810918747}
+    - {fileID: 1230364040593503075}
+    - {fileID: 7779129229684236296}
+    - {fileID: -258155194834388859}
+    - {fileID: 4216553886198021470}
+    - {fileID: -1318482028912760470}
+    - {fileID: 3128081233222889433}
+    - {fileID: 5274710075505374938}
+    - {fileID: 9211259922387846281}
+    - {fileID: -4961965267939936566}
+    - {fileID: 8750782801329275620}
+    - {fileID: 2122168782223517857}
+    - {fileID: 1518336830787672208}
+    - {fileID: 1123826020368463977}
+    - {fileID: 4512979207467273827}
+    - {fileID: 3620324325155089202}
+    - {fileID: 732691941201707349}
   m_OnBeat: {fileID: 0}
   m_OffBeat: {fileID: 0}
 --- !u!114 &-7843564412195805909
@@ -1014,6 +1163,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 54.46835443037975
   m_ID: 0
+--- !u!114 &-7151408173442756182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 13.306451612903226
+  m_ID: 1
 --- !u!114 &-7126334739336102345
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1028,6 +1191,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 35.10126582278481
   m_ID: 0
+--- !u!114 &-7118973279158111002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 27.338709677419356
+  m_ID: 1
 --- !u!114 &-6935509526720916513
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1041,6 +1218,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 44.40506329113924
+  m_ID: 1
+--- !u!114 &-6934775895003124611
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 2.17741935483871
   m_ID: 1
 --- !u!114 &-6929793031055487845
 MonoBehaviour:
@@ -1098,6 +1289,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 21.810126582278482
   m_ID: 0
+--- !u!114 &-6796881583781172194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 24.435483870967744
+  m_ID: 1
 --- !u!114 &-6781602704601813308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1238,6 +1443,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 46.11392405063292
   m_ID: 0
+--- !u!114 &-6418829643783853737
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 1.2096774193548387
+  m_ID: 1
 --- !u!114 &-6410326536952992359
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1425,6 +1644,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 57.69620253164557
   m_ID: 1
+--- !u!114 &-5867323010575213364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 29.274193548387096
+  m_ID: 1
 --- !u!114 &-5864480261312022202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1438,6 +1671,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 54.65822784810127
+  m_ID: 1
+--- !u!114 &-5849023575857977751
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 21.532258064516128
   m_ID: 1
 --- !u!114 &-5840712676623096511
 MonoBehaviour:
@@ -1453,6 +1700,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 42.696202531645575
   m_ID: 0
+--- !u!114 &-5839998009469185223
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 3.145161290322581
+  m_ID: 1
+--- !u!114 &-5766986704049795900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 0
+  m_ID: 1
 --- !u!114 &-5729321647708986662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1481,6 +1756,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 27.506329113924053
   m_ID: 0
+--- !u!114 &-5716698421958127198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 7.983870967741936
+  m_ID: 1
 --- !u!114 &-5604831564310226105
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1626,6 +1915,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 27.316455696202535
   m_ID: 1
+--- !u!114 &-5163553685533996725
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 30.725806451612904
+  m_ID: 1
 --- !u!114 &-5148399647743316923
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1668,6 +1971,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 22.75949367088608
   m_ID: 1
+--- !u!114 &-5007096279750226211
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 12.338709677419356
+  m_ID: 1
 --- !u!114 &-4967595800916044890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1701,6 +2018,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &-4961965267939936566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 40.88709677419355
+  m_ID: 1
 --- !u!114 &-4908682973733570388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1714,6 +2045,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 65.67088607594937
+  m_ID: 1
+--- !u!114 &-4893943652362577890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 15.241935483870968
   m_ID: 1
 --- !u!114 &-4876839921724194835
 MonoBehaviour:
@@ -1742,6 +2087,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 13.645569620253166
+  m_ID: 1
+--- !u!114 &-4764832876337979668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 0.7258064516129032
   m_ID: 1
 --- !u!114 &-4678541477133886593
 MonoBehaviour:
@@ -1916,6 +2275,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 49.151898734177216
   m_ID: 0
+--- !u!114 &-4208063989717110106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 25.403225806451612
+  m_ID: 1
+--- !u!114 &-4161954134309778559
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 2.661290322580645
+  m_ID: 1
 --- !u!114 &-4126702024341177096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2116,6 +2503,34 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 58.835443037974684
+  m_ID: 1
+--- !u!114 &-3688362331497718269
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 12.82258064516129
+  m_ID: 1
+--- !u!114 &-3670000136904835694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 32.66129032258065
   m_ID: 1
 --- !u!114 &-3643923797504327457
 MonoBehaviour:
@@ -3127,6 +3542,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 19.531645569620252
   m_ID: 0
+--- !u!114 &-3205635462729598869
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 8.951612903225806
+  m_ID: 1
 --- !u!114 &-3174138838010751601
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3258,6 +3687,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 10.987341772151899
   m_ID: 1
+--- !u!114 &-2565998645903102899
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 17.17741935483871
+  m_ID: 1
 --- !u!114 &-2552623123668094362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3314,6 +3757,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 50.67088607594937
   m_ID: 0
+--- !u!114 &-2301484050480444551
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 11.85483870967742
+  m_ID: 1
 --- !u!114 &-2258787958255104504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3398,6 +3855,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 22.569620253164558
   m_ID: 0
+--- !u!114 &-2022950151808059738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 6.532258064516129
+  m_ID: 1
 --- !u!114 &-2016632773960203428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3412,6 +3883,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 66.62025316455697
   m_ID: 0
+--- !u!114 &-2009640920912972220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 11.370967741935484
+  m_ID: 1
 --- !u!114 &-1943568798861803072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3458,6 +3943,34 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 37.56962025316456
+  m_ID: 1
+--- !u!114 &-1806810833191208617
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 28.306451612903228
+  m_ID: 1
+--- !u!114 &-1795931958951191506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 23.467741935483872
   m_ID: 1
 --- !u!114 &-1793542952961069779
 MonoBehaviour:
@@ -3525,6 +4038,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 28.835443037974684
   m_ID: 1
+--- !u!114 &-1627520653689180599
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 8.467741935483872
+  m_ID: 1
 --- !u!114 &-1546783971436390839
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3553,6 +4080,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 24.468354430379748
   m_ID: 0
+--- !u!114 &-1484331695764592854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 30.241935483870968
+  m_ID: 1
 --- !u!114 &-1481405272345791175
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3594,6 +4135,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 50.10126582278481
+  m_ID: 1
+--- !u!114 &-1436864836157032837
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 10.887096774193548
   m_ID: 1
 --- !u!114 &-1424383376406009899
 MonoBehaviour:
@@ -3642,6 +4197,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 68.8987341772152
   m_ID: 0
+--- !u!114 &-1318482028912760470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 38.95161290322581
+  m_ID: 1
 --- !u!114 &-1270261021140318971
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3736,6 +4305,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &-1058714296549245329
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 4.596774193548387
+  m_ID: 1
 --- !u!114 &-1009335151962116392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3769,6 +4352,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &-909636029703736040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 24.91935483870968
+  m_ID: 1
 --- !u!114 &-896395064432564163
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3852,6 +4449,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 49.34177215189873
+  m_ID: 1
+--- !u!114 &-583119103085160429
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 14.274193548387096
   m_ID: 1
 --- !u!114 &-542878585394571819
 MonoBehaviour:
@@ -4036,6 +4647,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 45.924050632911396
   m_ID: 1
+--- !u!114 &-258155194834388859
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 37.983870967741936
+  m_ID: 1
 --- !u!114 &-244730544595331928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4050,6 +4675,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 25.037974683544306
   m_ID: 1
+--- !u!114 &-242989516783692258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 35.08064516129032
+  m_ID: 1
 --- !u!114 &-220055414611713153
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4063,6 +4702,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 20.10126582278481
+  m_ID: 1
+--- !u!114 &-192366202553666202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 17.661290322580644
   m_ID: 1
 --- !u!114 &-172705964555181423
 MonoBehaviour:
@@ -4148,6 +4801,7 @@ MonoBehaviour:
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
+    m_ScenePreview: 1
   m_DurationMode: 0
   m_MarkerTrack: {fileID: 1530569935776417800}
   m_Bpm: 158
@@ -4158,6 +4812,11 @@ MonoBehaviour:
   m_Description: 
   m_Dificulty: 3
   m_AudioClip: {fileID: 8300000, guid: 99ca6f1351157fd42a1635c5e2cf843f, type: 3}
+  m_StartScore: 0
+  m_MaxScore: -1
+  m_MinScore: 0
+  m_PreventMaxScoreOvershoot: 0
+  m_PreventMinScoreOvershoot: 0
   m_HighScore:
     m_NoteAccuracyIDHistogram: 
     m_FullScore: 0
@@ -4237,6 +4896,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 7
   m_ID: 0
+--- !u!114 &70864046783254492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 31.20967741935484
+  m_ID: 1
 --- !u!114 &120304715563882748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4264,6 +4937,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 29.215189873417724
+  m_ID: 1
+--- !u!114 &304277954413367082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 19.596774193548388
   m_ID: 1
 --- !u!114 &355055760759333200
 MonoBehaviour:
@@ -4980,6 +5667,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 30.16455696202532
   m_ID: 0
+--- !u!114 &461057196370970514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 9.919354838709678
+  m_ID: 1
 --- !u!114 &479373579924657610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5013,6 +5714,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 64.91139240506328
   m_ID: 1
+--- !u!114 &494032223752136967
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 34.59677419354839
+  m_ID: 1
+--- !u!114 &524530004751637280
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 15.725806451612904
+  m_ID: 1
 --- !u!114 &559339724079285575
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5026,6 +5755,34 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 33.01265822784811
+  m_ID: 1
+--- !u!114 &561141536546400881
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 31.693548387096776
+  m_ID: 1
+--- !u!114 &631410117695198588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 33.62903225806452
   m_ID: 1
 --- !u!114 &683255681052246624
 MonoBehaviour:
@@ -5073,6 +5830,34 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 72.12658227848102
+  m_ID: 1
+--- !u!114 &732691941201707349
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 44.274193548387096
+  m_ID: 1
+--- !u!114 &735850480957323218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 20.080645161290324
   m_ID: 1
 --- !u!114 &756659264334451271
 MonoBehaviour:
@@ -5158,6 +5943,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 22.949367088607595
   m_ID: 0
+--- !u!114 &1034916848750927140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 1.6935483870967742
+  m_ID: 1
 --- !u!114 &1047342175955678552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5180,7 +5979,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 8.139240517269208
+    m_Start: 8.139240506329115
     m_ClipIn: 0
     m_Asset: {fileID: -3612195688447956534}
     m_Duration: 0.37974682450294495
@@ -6162,6 +6961,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 48.20253164556962
   m_ID: 1
+--- !u!114 &1123826020368463977
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 42.82258064516129
+  m_ID: 1
+--- !u!114 &1142767453424453403
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 16.693548387096776
+  m_ID: 1
 --- !u!114 &1227869281554997787
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6181,6 +7008,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &1230364040593503075
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 37.016129032258064
+  m_ID: 1
 --- !u!114 &1302851235046700226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6366,6 +7207,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &1518336830787672208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 42.33870967741935
+  m_ID: 1
 --- !u!114 &1530569935776417800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7696,6 +8551,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 35.67088607594937
   m_ID: 1
+--- !u!114 &2122168782223517857
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 41.85483870967742
+  m_ID: 1
 --- !u!114 &2174411577987529332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7841,6 +8710,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 34.53164556962025
   m_ID: 1
+--- !u!114 &2863066849454249167
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 5.080645161290322
+  m_ID: 1
 --- !u!114 &2882048139100641038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7953,6 +8836,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 19.911392405063292
   m_ID: 0
+--- !u!114 &3128081233222889433
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 39.435483870967744
+  m_ID: 1
 --- !u!114 &3179964365413456061
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7966,6 +8863,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 52.379746835443036
+  m_ID: 1
+--- !u!114 &3233839415588212820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 4.112903225806452
   m_ID: 1
 --- !u!114 &3309517246054838548
 MonoBehaviour:
@@ -8028,6 +8939,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 49.911392405063296
   m_ID: 0
+--- !u!114 &3380738472041114408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 22.983870967741936
+  m_ID: 1
 --- !u!114 &3439960613975288713
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8069,6 +8994,34 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 57.31645569620253
+  m_ID: 1
+--- !u!114 &3620324325155089202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 43.79032258064516
+  m_ID: 1
+--- !u!114 &3636705341192018898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 35.564516129032256
   m_ID: 1
 --- !u!114 &3727036692226705375
 MonoBehaviour:
@@ -8248,6 +9201,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &4124224042022268817
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 10.403225806451612
+  m_ID: 1
 --- !u!114 &4194811153778865505
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8261,6 +9228,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 9.848101265822784
+  m_ID: 1
+--- !u!114 &4216553886198021470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 38.46774193548387
   m_ID: 1
 --- !u!114 &4245933923235024770
 MonoBehaviour:
@@ -8454,6 +9435,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 28.075949367088608
   m_ID: 1
+--- !u!114 &4512979207467273827
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 43.306451612903224
+  m_ID: 1
 --- !u!114 &4539774711474891302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8623,6 +9618,48 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &4968768100011096458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 28.79032258064516
+  m_ID: 1
+--- !u!114 &5036341471781253932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 6.048387096774194
+  m_ID: 1
+--- !u!114 &5045718547196731836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 7.5
+  m_ID: 1
 --- !u!114 &5085663411881210815
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8665,6 +9702,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 62.44303797468355
   m_ID: 0
+--- !u!114 &5169282418788224698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 26.370967741935484
+  m_ID: 1
 --- !u!114 &5186310739824383229
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8692,6 +9743,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 24.27848101265823
+  m_ID: 1
+--- !u!114 &5274710075505374938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 39.91935483870968
   m_ID: 1
 --- !u!114 &5331055614742060599
 MonoBehaviour:
@@ -8787,6 +9852,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 55.607594936708864
   m_ID: 0
+--- !u!114 &5469068950759091195
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 21.048387096774192
+  m_ID: 1
 --- !u!114 &5510275416294079280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8876,6 +9955,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 54.278481012658226
   m_ID: 1
+--- !u!114 &5780850394269881739
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 23.951612903225808
+  m_ID: 1
 --- !u!114 &5822474144988528493
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8918,6 +10011,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 67.75949367088609
   m_ID: 0
+--- !u!114 &5944720607097012842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 18.629032258064516
+  m_ID: 1
 --- !u!114 &5973904789088147551
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8960,6 +10067,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 21.430379746835442
   m_ID: 0
+--- !u!114 &6050985520393217019
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 7.016129032258064
+  m_ID: 1
 --- !u!114 &6076956435514507832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9082,6 +10203,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 58.64556962025317
   m_ID: 0
+--- !u!114 &6366875287610388225
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 14.758064516129032
+  m_ID: 1
 --- !u!114 &6390799607656239720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9157,6 +10292,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 23.329113924050635
   m_ID: 0
+--- !u!114 &6523954170278733707
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 34.112903225806456
+  m_ID: 1
 --- !u!114 &6538781218988400058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9246,6 +10395,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 10.037974683544304
   m_ID: 0
+--- !u!114 &6820483938810918747
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 36.53225806451613
+  m_ID: 1
 --- !u!114 &6843995905858659826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9288,6 +10451,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 70.9873417721519
   m_ID: 1
+--- !u!114 &7019215261085261778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 13.790322580645162
+  m_ID: 1
 --- !u!114 &7079062679175536059
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9301,6 +10478,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 55.037974683544306
+  m_ID: 1
+--- !u!114 &7105726261879383320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 25.887096774193548
   m_ID: 1
 --- !u!114 &7133908110741409438
 MonoBehaviour:
@@ -9344,6 +10535,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 64.15189873417722
   m_ID: 1
+--- !u!114 &7322308748832685204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 18.14516129032258
+  m_ID: 1
 --- !u!114 &7338735048840843744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9372,6 +10577,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 40.037974683544306
   m_ID: 0
+--- !u!114 &7429026584803767003
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 27.822580645161292
+  m_ID: 1
 --- !u!114 &7447653108084557014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9489,6 +10708,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 59.025316455696206
   m_ID: 0
+--- !u!114 &7752594528079681573
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 33.145161290322584
+  m_ID: 1
 --- !u!114 &7761930563499469092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9508,6 +10741,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &7779129229684236296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 37.5
+  m_ID: 1
 --- !u!114 &7782543809007073910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9569,6 +10816,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &7991309915417401593
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 22.016129032258064
+  m_ID: 1
 --- !u!114 &8011830519256965634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9596,6 +10857,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 17.822784810126585
+  m_ID: 1
+--- !u!114 &8043634990679540893
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 32.17741935483871
   m_ID: 1
 --- !u!114 &8055160413624738449
 MonoBehaviour:
@@ -9647,6 +10922,20 @@ MonoBehaviour:
   m_bufferingTime: 0.1
   m_ClipProperties:
     volume: 1
+--- !u!114 &8116234423672396747
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 22.5
+  m_ID: 1
 --- !u!114 &8141020455952738479
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9787,6 +11076,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 71.55696202531647
   m_ID: 0
+--- !u!114 &8467901778276355142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 29.758064516129032
+  m_ID: 1
 --- !u!114 &8482083181256569729
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9856,6 +11159,34 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 7.569620253164557
+  m_ID: 1
+--- !u!114 &8571280752800415024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 19.112903225806452
+  m_ID: 1
+--- !u!114 &8666296486806126251
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 5.564516129032258
   m_ID: 1
 --- !u!114 &8695528575145364364
 MonoBehaviour:
@@ -9932,6 +11263,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Time: 48.01265822784811
   m_ID: 0
+--- !u!114 &8750782801329275620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 41.37096774193549
+  m_ID: 1
 --- !u!114 &8798290227670252953
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9987,6 +11332,20 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 62.63291139240506
+  m_ID: 1
+--- !u!114 &8859996117973815603
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 20.56451612903226
   m_ID: 1
 --- !u!114 &8933784882623378921
 MonoBehaviour:
@@ -10105,6 +11464,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &9040181381713355117
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 0.24193548387096775
+  m_ID: 1
 --- !u!114 &9161246229822277596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10138,6 +11511,20 @@ MonoBehaviour:
     m_StringParameter: 
     m_FloatParameter: 0
     m_ObjectReferenceParameter: {fileID: 0}
+--- !u!114 &9171602572738296713
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 3.629032258064516
+  m_ID: 1
 --- !u!114 &9199509901910291530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10151,4 +11538,18 @@ MonoBehaviour:
   m_Name: BPM Off Beat Marker
   m_EditorClassIdentifier: 
   m_Time: 67.18987341772151
+  m_ID: 1
+--- !u!114 &9211259922387846281
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae432735e845c1b3261f7bbb4c9628, type: 3}
+  m_Name: BPM Off Beat Marker
+  m_EditorClassIdentifier: 
+  m_Time: 40.403225806451616
   m_ID: 1
