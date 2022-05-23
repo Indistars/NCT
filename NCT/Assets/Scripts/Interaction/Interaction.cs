@@ -8,10 +8,10 @@ public class Interaction : interactiveConversation
 
     private void Update()
     {
-        if (Input.GetKeyDown(interactionKeyCode) && canIntercation && !isInteracting)
+        if (Input.GetKeyDown(interactionKeyCode) && canIntercation && !isInteracting) // 상호작용 조건 충족시 
         {
-            DataExtract(interactiveObject);
-            Interacting();
+            DataExtract(interactiveObject); // 데이터 받기
+            Interacting(); // 상호작용
         }
     }
 }

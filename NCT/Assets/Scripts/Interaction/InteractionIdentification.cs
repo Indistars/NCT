@@ -5,7 +5,10 @@ using UnityEngine;
 public class InteractionIdentification : MonoBehaviour
 {
     protected bool canIntercation; // 상호작용이 가능한지 나타내는 bool
+
     protected GameObject interactiveObject; // 상호작용할 오브젝트를 넣어두는 임시 변수
+
+    protected Transform interactiveCameraPosition; // 상호작용할 카메라 위치 변수
 
     protected void OnTriggerStay(Collider collider)
     {
@@ -26,6 +29,7 @@ public class InteractionIdentification : MonoBehaviour
         if (collider.CompareTag("Animal")) // 동물일 경우
         {
             interactiveObject = null;  // 객체 초기화
+            interactiveCameraPosition = null; // 카메라 위치 값 초기화
             collider.GetComponent<Outline>().enabled = false; // Outline 비활성화
         }
     }

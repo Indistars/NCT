@@ -11,7 +11,5 @@ public class InteractionDataExtraction : InteractionIdentification
     protected void DataExtract(GameObject interactiveObject)
     {
         Debug.Log(interactiveObject);
-
-        
     }
 }
