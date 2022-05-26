@@ -15,7 +15,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
     using UnityEngine;
 
     /// <summary>
-    /// Gets information from the RhythmDirector and from the input to processes notes.
+    /// Rhythm Director 및 프로세스 노트에 대한 입력에서 정보를 가져옵니다.
     /// </summary>
     public class RhythmProcessor : MonoBehaviour
     {
@@ -47,6 +47,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             InvokeNoteInitializeEventInternal(inputEventData);
             
             var note = m_RhythmDirector.TrackObjects[inputEventData.TrackID].CurrentNote;
+
            
             if (note == null) { return; }
 

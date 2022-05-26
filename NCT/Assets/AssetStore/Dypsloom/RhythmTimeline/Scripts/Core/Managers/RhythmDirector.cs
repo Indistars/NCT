@@ -122,7 +122,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
 
             SetupTrackBindings();
 
-            // rebuild for runtime playing
+            // 런타임 재생을 위해 재구성
             m_PlayableDirector.RebuildGraph();
             m_PlayableDirector.time = 0.0;
             m_PlayableDirector.Play();
@@ -161,7 +161,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
 
             m_AudioTracksCount = 0;
         
-            //Put back the audio track to it's original place
+            //오디오 트랙을 원래 위치로 되돌린다.
             var outputTracks = m_SongTimelineAsset.GetOutputTracks();
             foreach (var track in outputTracks) {
                 if (track.GetType() == typeof(AudioTrack)) {
