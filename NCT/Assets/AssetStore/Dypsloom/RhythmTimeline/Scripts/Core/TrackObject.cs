@@ -13,7 +13,7 @@ namespace Dypsloom.RhythmTimeline.Core
 
     public class TrackObject : MonoBehaviour
     {
-        [Tooltip("The start point where the notes should spawn.")]
+        [Tooltip("노트를 생성할 시작 지점")]
         [SerializeField] protected Transform m_StartPoint;
         [Tooltip("The end point where the notes should be when they are perfect for the beat.")]
         [SerializeField] protected Transform m_EndPoint;
@@ -21,9 +21,9 @@ namespace Dypsloom.RhythmTimeline.Core
         [SerializeField] protected Collider m_TouchCollider3D;
         [Tooltip("The 2D touch collider.")]
         [SerializeField] protected Collider2D m_TouchCollider2D;
-        [Tooltip("The event when at least one note was activated.")]
+        [Tooltip("하나 이상의 노트가 활성화 된 이벤트")]
         [SerializeField] protected UnityEvent m_OnNoteActivate;
-        [Tooltip("The event when no notes are active on the track anymore.")]
+        [Tooltip("트랙에서 더이상 활성화 된 노트가 없는 이벤트")]
         [SerializeField] protected UnityEvent m_OnNoteDeactivate;
 
         public Transform StartPoint => m_StartPoint;

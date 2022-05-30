@@ -48,7 +48,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         [SerializeField] protected AudioSource[] m_AudioSources;
         [Tooltip("The Track Objects to bind to the Rhythm Tracks.")]
         [SerializeField] protected TrackObject[] m_TrackObjects;
-        
+
         protected int m_AudioTracksCount = 0;
     
         protected RhythmTimelineAsset m_SongTimelineAsset;
