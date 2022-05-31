@@ -108,9 +108,11 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
 
         private void Start()
         {
+
             if (m_PlayOnStart) {
                 PlaySong(m_PlayableDirector.playableAsset as RhythmTimelineAsset);
             }
+
         }
 
         public void PlaySong(RhythmTimelineAsset songTimeLine)
@@ -135,8 +137,9 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         protected virtual void SetupTrackBindings()
         {
             var outputTracks = m_SongTimelineAsset.GetOutputTracks();
-            foreach (var track in outputTracks) {
             
+            foreach (var track in outputTracks) {
+
                 if (track  is AudioTrack audioTrack) { SetUpAudioTrackBinding(audioTrack); }
             
             }
