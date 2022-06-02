@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
+    [SerializeField] float speed;
+    [SerializeField] Transform targetPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,6 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = Vector3.MoveTowards(transform.position, targetPos.position, speed);
     }
 }
