@@ -580,7 +580,7 @@ MonoBehaviour:
   m_MarkerTrack: {fileID: -2959229300456655058}
   m_Bpm: 158
   m_OverrideNoteSpeed: 0
-  m_NoteSpeed: 3
+  m_NoteSpeed: 30
   m_FullName: 
   m_Authour: 
   m_Description: 
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 3.037974683544304
+    m_Start: 2.2
     m_ClipIn: 0
     m_Asset: {fileID: 4875665682848052186}
     m_Duration: 60.75950113378685
