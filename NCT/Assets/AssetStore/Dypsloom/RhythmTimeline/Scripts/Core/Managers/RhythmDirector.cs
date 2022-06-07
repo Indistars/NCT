@@ -169,6 +169,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             foreach (var track in outputTracks) {
                 if (track.GetType() == typeof(AudioTrack)) {
                     var audioClips = track.GetClips();
+
                     foreach (var audioClip in audioClips) {
                         audioClip.start -= AudioDelay;
                     }
