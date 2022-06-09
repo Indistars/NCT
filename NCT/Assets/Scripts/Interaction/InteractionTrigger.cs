@@ -28,7 +28,7 @@ public class InteractionTrigger : Singleton<InteractionTrigger>
     /// <param name="interactiveObject">상호작용할 오브젝트</param>
     public void StartInteraction(GameObject interactiveObject)
     {
-        playerBody.parent.GetComponent<TPSCharacterManipulation>().enabled = false; // TPS 캐릭터 비활성화
+        TPSCharacterManipulation.Instance.enabled = false; // TPS 캐릭터 비활성화
         playerBody.GetComponent<Animator>().SetFloat("MoveSpeed", 0); // 플레이어 애니메이션 멈춤
         cameraFieldOfValue = mainCamera.fieldOfView; // 카메라 fieldOfView 값 할당
         mainCamera.transform.SetParent(interactiveObject.transform.GetChild(2), false); // 3인칭 변경
@@ -40,7 +40,7 @@ public class InteractionTrigger : Singleton<InteractionTrigger>
     /// </summary>
     public void InteractionRestore()
     {
-        playerBody.parent.GetComponent<TPSCharacterManipulation>().enabled = true; // TPS 캐릭터 활성화
+        TPSCharacterManipulation.Instance.enabled = true; // TPS 캐릭터 활성화
         playerBody.parent.GetComponent<ZoomCamera>().setTPS(cameraFieldOfValue); // TPS 방식으로 변경
         interactionUIPanel.SetActive(false); // 대화 패널 비활성화
     }

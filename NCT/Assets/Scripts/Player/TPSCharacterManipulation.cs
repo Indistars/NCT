@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TPSCharacterManipulation : MonoBehaviour
+public class TPSCharacterManipulation : Singleton<TPSCharacterManipulation>
 {
     [SerializeField] private KeyCode runKeyCode; // 달리기 키 코드
 
