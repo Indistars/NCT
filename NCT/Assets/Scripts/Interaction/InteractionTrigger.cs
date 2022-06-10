@@ -17,6 +17,18 @@ public class InteractionTrigger : Singleton<InteractionTrigger>
 
     private float cameraFieldOfValue; // 카메라 확대값
 
+    private TPSCharacterManipulation tpsCharacterManipulation; // tps 움직임 컴포넌트
+    private ZoomCamera zoomCamera; // 줌 카메라 컴포넌트
+    private Animator animator; // 플레이어 애니메이터 컴포넌트
+
+    override protected void Awake()
+    {
+        base.Awake();
+        tpsCharacterManipulation = playerBody.parent.GetComponent<TPSCharacterManipulation>(); // 컴포넌트 받아오기
+        zoomCamera = playerBody.parent.GetComponent<ZoomCamera>(); // 컴포넌트 받아오기
+        animator =  playerBody.GetComponent<Animator>(); // 컴포넌트 받아오기
+    }
+
     private void Start()
     {
         DataBaseManager.Instance.LoadAnimalTable(); /* tdAnimal 불러오기, 파싱 ※나중에 게임 로딩창에서 사용 예정※ */
@@ -28,8 +40,8 @@ public class InteractionTrigger : Singleton<InteractionTrigger>
     /// <param name="interactiveObject">상호작용할 오브젝트</param>
     public void StartInteraction(GameObject interactiveObject)
     {
-        TPSCharacterManipulation.Instance.enabled = false; // TPS 캐릭터 비활성화
-        playerBody.GetComponent<Animator>().SetFloat("MoveSpeed", 0); // 플레이어 애니메이션 멈춤
+        tpsCharacterManipulation.enabled = false; // TPS 캐릭터 비활성화
+        animator.SetFloat("MoveSpeed", 0); // 플레이어 애니메이션 멈춤
         cameraFieldOfValue = mainCamera.fieldOfView; // 카메라 fieldOfView 값 할당
         mainCamera.transform.SetParent(interactiveObject.transform.GetChild(2), false); // 3인칭 변경
         interactionUIPanel.SetActive(true); // 대화 패널 활성화
@@ -40,9 +52,8 @@ public class InteractionTrigger : Singleton<InteractionTrigger>
     /// </summary>
     public void InteractionRestore()
     {
-        TPSCharacterManipulation.Instance.enabled = true; // TPS 캐릭터 활성화
-        playerBody.parent.GetComponent<ZoomCamera>().setTPS(cameraFieldOfValue); // TPS 방식으로 변경
-        interactionUIPanel.SetActive(false); // 대화 패널 비활성화
+        tpsCharacterManipulation.enabled = true; // TPS 캐릭터 활성화
+        zoomCamera.setTPS(cameraFieldOfValue); // TPS 방식으로 변경
     }
 
     private void OnTriggerStay(Collider collider)

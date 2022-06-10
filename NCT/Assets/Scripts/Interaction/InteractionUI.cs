@@ -15,7 +15,7 @@ public class InteractionUI : MonoBehaviour
     private void Awake()
     {
         interactionName.text = DataBaseManager.Instance.tdAnimalDict[10001].Name; // tdAnimal 불러오기
-        interactionText.text = DataBaseManager.Instance.tdAnimalDict[10001].Order_Comment[0]; // 첫 주문 내용 불러오기
+        interactionText.text = DataBaseManager.Instance.tdAnimalDict[10001].Order_Comment[interactionIndex]; // 첫 주문 내용 불러오기
     }
 
     /// <summary>
@@ -23,9 +23,9 @@ public class InteractionUI : MonoBehaviour
     /// </summary>
     public void OnNextButton()
     {
-        if (interactionIndex != DataBaseManager.Instance.tdAnimalDict[10001].Order_Comment.Count) // 현재 대화가 마지막 대화가 아닐경우
+        if (DataBaseManager.Instance.tdAnimalDict[10001].Order_Comment.Count > 1 && ++interactionIndex < DataBaseManager.Instance.tdAnimalDict[10001].Order_Comment.Count) // 현재 대화가 마지막 대화가 아닐경우
         {
-            interactionText.text = DataBaseManager.Instance.tdAnimalDict[10001].Order_Comment[++interactionIndex]; // 다음 주문 내용 불러오기
+            interactionText.text = DataBaseManager.Instance.tdAnimalDict[10001].Order_Comment[interactionIndex]; // 다음 주문 내용 불러오기
 
         }
         else // 현재 대화가 마지막 대화일 경우
@@ -39,7 +39,9 @@ public class InteractionUI : MonoBehaviour
     /// </summary>
     public void StartOrder()
     {
-        InteractionTrigger.Instance.InteractionRestore(); // 상호작용 복구
+        interactionIndex = 0; // 대화 index 초기화
+        // InteractionTrigger.Instance.InteractionRestore(); // 상호작용 복구
+        gameObject.SetActive(false); // 대화 패널 비활성화
         // orderFormUIPanel.SetActive(true); // 주문 UI 시작 ※ 추가 예정 ※
     }
 }
