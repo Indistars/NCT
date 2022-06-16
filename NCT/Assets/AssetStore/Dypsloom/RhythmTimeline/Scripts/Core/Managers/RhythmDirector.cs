@@ -13,6 +13,8 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
     using UnityEngine.Playables;
     using UnityEngine.Serialization;
     using UnityEngine.Timeline;
+    
+
 
     /// <summary>
     /// The Rhythm Director is a component which controls the Playable Director
@@ -23,10 +25,10 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
     {
         public event Action OnSongPlay;
         public event Action OnSongEnd;
-        
+
         [Tooltip("The Rhythm Processor.")]
         [SerializeField] protected RhythmProcessor m_RhythmProcessor;
-        [Tooltip("The Playable Director.")]
+        [Tooltip("The Playable Director.")] 
         [SerializeField] protected PlayableDirector m_PlayableDirector;
 
         [Tooltip("The x means the time the note should be spawned before it reaches the target. " +
@@ -48,6 +50,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         [SerializeField] protected AudioSource[] m_AudioSources;
         [Tooltip("The Track Objects to bind to the Rhythm Tracks.")]
         [SerializeField] protected TrackObject[] m_TrackObjects;
+
 
         protected int m_AudioTracksCount = 0;
     
@@ -84,6 +87,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         public Vector2 SpawnTimeRange => m_SpawnTimeRange;
         public double DspSongStartTime => m_DspSongStartTime;
 
+        
         public void RefreshBpm()
         {
             SetBpm(SongTimelineAsset.Bpm);
@@ -115,8 +119,12 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
 
         }
 
+        //노래 시작
         public void PlaySong(RhythmTimelineAsset songTimeLine)
         {
+
+
+
             m_SongTimelineAsset = songTimeLine;
             m_PlayableDirector.playableAsset = m_SongTimelineAsset;
 
@@ -210,4 +218,5 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             }
         }
     }
+ 
 }
