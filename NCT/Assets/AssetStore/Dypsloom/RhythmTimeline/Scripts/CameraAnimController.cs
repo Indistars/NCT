@@ -1,0 +1,33 @@
+﻿using System.Collections;
+using UnityEngine;
+
+namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
+{
+    public class CameraAnimController : MonoBehaviour
+    {
+        [Tooltip("리듬게임이 진행될때 움직이는 카메라의 애니메이션")]
+        Animator anim;
+
+        private void Awake()
+        {
+            anim = GetComponent<Animator>();
+        }
+
+        // Use this for initialization
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        public void PlaySong()
+        {
+            anim.SetTrigger("Start");
+        }
+    }
+}

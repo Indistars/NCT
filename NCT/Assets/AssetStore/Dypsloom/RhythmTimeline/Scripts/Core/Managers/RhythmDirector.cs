@@ -13,7 +13,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
     using UnityEngine.Playables;
     using UnityEngine.Serialization;
     using UnityEngine.Timeline;
-    
+    using Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts;
 
 
     /// <summary>
@@ -30,6 +30,10 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         [SerializeField] protected RhythmProcessor m_RhythmProcessor;
         [Tooltip("The Playable Director.")] 
         [SerializeField] protected PlayableDirector m_PlayableDirector;
+
+        [Tooltip("리듬게임 시 카메라 이동을 관리 하는 스크립트")]
+        [SerializeField] CameraAnimController cAnimController;
+
 
         [Tooltip("The x means the time the note should be spawned before it reaches the target. " +
                  "The y means the time the note should disappear after reaching target")]
@@ -51,6 +55,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         [Tooltip("The Track Objects to bind to the Rhythm Tracks.")]
         [SerializeField] protected TrackObject[] m_TrackObjects;
 
+        
 
         protected int m_AudioTracksCount = 0;
     
@@ -108,10 +113,12 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             Toolbox.Set(this);
             m_PlayableDirector.timeUpdateMode = DirectorUpdateMode.DSPClock;
             m_PlayableDirector.stopped += HandleSongEnded;
+           
         }
 
         private void Start()
         {
+            
 
             if (m_PlayOnStart) {
                 PlaySong(m_PlayableDirector.playableAsset as RhythmTimelineAsset);
@@ -122,8 +129,8 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         //노래 시작
         public void PlaySong(RhythmTimelineAsset songTimeLine)
         {
-
-
+            //리듬게임의 카메라 이동 시작
+            cAnimController.PlaySong();
 
             m_SongTimelineAsset = songTimeLine;
             m_PlayableDirector.playableAsset = m_SongTimelineAsset;
