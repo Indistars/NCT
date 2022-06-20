@@ -32,7 +32,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         [SerializeField] protected PlayableDirector m_PlayableDirector;
 
         [Tooltip("리듬게임 시 카메라 이동을 관리 하는 스크립트")]
-        [SerializeField] RhythmCameraController cAnimController;
+        [SerializeField] RhythmCameraController m_CameraController;
 
 
         [Tooltip("The x means the time the note should be spawned before it reaches the target. " +
@@ -130,7 +130,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         public void PlaySong(RhythmTimelineAsset songTimeLine)
         {
             //리듬게임의 카메라 이동 시작
-            cAnimController.PlaySong();
+            m_CameraController.PlaySong();
 
             m_SongTimelineAsset = songTimeLine;
             m_PlayableDirector.playableAsset = m_SongTimelineAsset;
@@ -176,6 +176,9 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         /// </summary>
         public void EndSong()
         {
+            //리듬게임이 끝난 상황에서 카메라 이동
+            m_CameraController.EndSong();
+
             if (m_IsPlaying == false) { return; }
         
             m_PlayableDirector.Stop();

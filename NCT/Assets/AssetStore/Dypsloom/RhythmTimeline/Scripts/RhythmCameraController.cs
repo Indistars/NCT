@@ -7,6 +7,7 @@ namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
     {
         [Tooltip("리듬게임이 진행될때 움직이는 카메라의 애니메이션")]
         Animator anim;
+        [SerializeField] SpriteRenderer sprite;
 
         private void Awake()
         {
@@ -32,6 +33,8 @@ namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
 
         public void EndSong()
         {
+            sprite.color = Color.Lerp(new Color(1, 1, 1, 0), Color.white, 0.4f);
+            anim.SetTrigger("End");
 
         }
     }
