@@ -32,7 +32,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         [SerializeField] protected PlayableDirector m_PlayableDirector;
 
         [Tooltip("리듬게임 시 카메라 이동을 관리 하는 스크립트")]
-        [SerializeField] CameraAnimController cAnimController;
+        [SerializeField] RhythmCameraController cAnimController;
 
 
         [Tooltip("The x means the time the note should be spawned before it reaches the target. " +
@@ -171,6 +171,9 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             EndSong();
         }
 
+        /// <summary>
+        /// 리듬이 끝났을 떄
+        /// </summary>
         public void EndSong()
         {
             if (m_IsPlaying == false) { return; }

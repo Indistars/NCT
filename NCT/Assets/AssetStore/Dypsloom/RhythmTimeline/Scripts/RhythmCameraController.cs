@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
 {
-    public class CameraAnimController : MonoBehaviour
+    public class RhythmCameraController : MonoBehaviour
     {
         [Tooltip("리듬게임이 진행될때 움직이는 카메라의 애니메이션")]
         Animator anim;
@@ -28,6 +28,11 @@ namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
         public void PlaySong()
         {
             anim.SetTrigger("Start");
+        }
+
+        public void EndSong()
+        {
+
         }
     }
 }
