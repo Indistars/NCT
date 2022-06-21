@@ -33,8 +33,7 @@ namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
 
         public void EndSong()
         {
-            sprite.color = Color.Lerp(new Color(1, 1, 1, 0), Color.white, 0.4f);
-            anim.SetTrigger("End");
+            sprite.color = Color.Lerp(new Color(1, 1, 1, 0), Color.white, 1f);
 
         }
     }

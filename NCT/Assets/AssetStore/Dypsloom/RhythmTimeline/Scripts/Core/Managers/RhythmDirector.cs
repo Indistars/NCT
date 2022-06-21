@@ -176,9 +176,6 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         /// </summary>
         public void EndSong()
         {
-            //리듬게임이 끝난 상황에서 카메라 이동
-            m_CameraController.EndSong();
-
             if (m_IsPlaying == false) { return; }
         
             m_PlayableDirector.Stop();
