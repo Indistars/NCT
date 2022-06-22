@@ -118,7 +118,7 @@ namespace Dypsloom.RhythmTimeline.Core.Notes
 		{ }
 
 		/// <summary>
-		/// 리듬클립데이터를 사용하여 노트를 초기화 합니다
+		/// 리듬클립데이터를 사용하여 노트를 생성한다
 		/// </summary>
 		/// <param name="rhythmClipData">리듬클립데이터</param>
 		public virtual void Initialize(RhythmClipData rhythmClipData)
