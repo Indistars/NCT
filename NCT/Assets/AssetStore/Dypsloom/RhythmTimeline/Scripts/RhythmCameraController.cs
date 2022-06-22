@@ -9,6 +9,10 @@ namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
         Animator anim;
         [SerializeField] SpriteRenderer sprite;
 
+        [Header("카메라의 위치")]
+        [SerializeField] Transform startTransform;
+        [SerializeField] Transform endTransform;
+
         Coroutine imgCoroutine;
 
         private void Awake()
@@ -30,12 +34,14 @@ namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
 
         public void PlaySong()
         {
+            transform.position = startTransform.position;
             anim.SetTrigger("Start");
             imgCoroutine =  StartCoroutine(FoodImgShow());
         }
 
         public void EndSong()
         {
+            transform.position = endTransform.position;
             StopCoroutine(imgCoroutine);
         }
 
