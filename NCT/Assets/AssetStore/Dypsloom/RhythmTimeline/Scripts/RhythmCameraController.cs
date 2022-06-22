@@ -9,6 +9,8 @@ namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
         Animator anim;
         [SerializeField] SpriteRenderer sprite;
 
+        Coroutine imgCoroutine;
+
         private void Awake()
         {
             anim = GetComponent<Animator>();
@@ -29,12 +31,25 @@ namespace Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts
         public void PlaySong()
         {
             anim.SetTrigger("Start");
+            imgCoroutine =  StartCoroutine(FoodImgShow());
         }
 
         public void EndSong()
         {
-            sprite.color = Color.Lerp(new Color(1, 1, 1, 0), Color.white, 1f);
+            StopCoroutine(imgCoroutine);
+        }
 
+        IEnumerator FoodImgShow()
+        {
+            sprite.color = new Color(1, 1, 1, 0);
+
+            while (true)
+            {
+                sprite.color += new Color(1, 1, 1, 0.1f);
+                yield return new WaitForSeconds(5f);
+                if(sprite.color == Color.white)
+                    yield break;
+            }
         }
     }
 }

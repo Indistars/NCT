@@ -176,6 +176,8 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         /// </summary>
         public void EndSong()
         {
+            m_CameraController.EndSong();
+
             if (m_IsPlaying == false) { return; }
         
             m_PlayableDirector.Stop();
