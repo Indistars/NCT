@@ -13,6 +13,8 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
     using UnityEngine.Playables;
     using UnityEngine.Serialization;
     using UnityEngine.Timeline;
+    using Assets.AssetStore.Dypsloom.RhythmTimeline.Scripts;
+
 
     /// <summary>
     /// The Rhythm Director is a component which controls the Playable Director
@@ -23,11 +25,15 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
     {
         public event Action OnSongPlay;
         public event Action OnSongEnd;
-        
+
         [Tooltip("The Rhythm Processor.")]
         [SerializeField] protected RhythmProcessor m_RhythmProcessor;
-        [Tooltip("The Playable Director.")]
+        [Tooltip("The Playable Director.")] 
         [SerializeField] protected PlayableDirector m_PlayableDirector;
+
+        [Tooltip("리듬게임 시 카메라 이동을 관리 하는 스크립트")]
+        [SerializeField] RhythmCameraController m_CameraController;
+
 
         [Tooltip("The x means the time the note should be spawned before it reaches the target. " +
                  "The y means the time the note should disappear after reaching target")]
@@ -48,7 +54,9 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         [SerializeField] protected AudioSource[] m_AudioSources;
         [Tooltip("The Track Objects to bind to the Rhythm Tracks.")]
         [SerializeField] protected TrackObject[] m_TrackObjects;
+
         
+
         protected int m_AudioTracksCount = 0;
     
         protected RhythmTimelineAsset m_SongTimelineAsset;
@@ -84,6 +92,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         public Vector2 SpawnTimeRange => m_SpawnTimeRange;
         public double DspSongStartTime => m_DspSongStartTime;
 
+        
         public void RefreshBpm()
         {
             SetBpm(SongTimelineAsset.Bpm);
@@ -104,17 +113,25 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             Toolbox.Set(this);
             m_PlayableDirector.timeUpdateMode = DirectorUpdateMode.DSPClock;
             m_PlayableDirector.stopped += HandleSongEnded;
+           
         }
 
         private void Start()
         {
+            
+
             if (m_PlayOnStart) {
                 PlaySong(m_PlayableDirector.playableAsset as RhythmTimelineAsset);
             }
+
         }
 
+        //노래 시작
         public void PlaySong(RhythmTimelineAsset songTimeLine)
         {
+            //리듬게임의 카메라 이동 시작
+            m_CameraController.PlaySong();
+
             m_SongTimelineAsset = songTimeLine;
             m_PlayableDirector.playableAsset = m_SongTimelineAsset;
 
@@ -122,7 +139,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
 
             SetupTrackBindings();
 
-            // rebuild for runtime playing
+            // 런타임 재생을 위해 재구성
             m_PlayableDirector.RebuildGraph();
             m_PlayableDirector.time = 0.0;
             m_PlayableDirector.Play();
@@ -135,8 +152,9 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         protected virtual void SetupTrackBindings()
         {
             var outputTracks = m_SongTimelineAsset.GetOutputTracks();
-            foreach (var track in outputTracks) {
             
+            foreach (var track in outputTracks) {
+
                 if (track  is AudioTrack audioTrack) { SetUpAudioTrackBinding(audioTrack); }
             
             }
@@ -153,19 +171,25 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             EndSong();
         }
 
+        /// <summary>
+        /// 리듬이 끝났을 떄
+        /// </summary>
         public void EndSong()
         {
+            m_CameraController.EndSong();
+
             if (m_IsPlaying == false) { return; }
         
             m_PlayableDirector.Stop();
 
             m_AudioTracksCount = 0;
         
-            //Put back the audio track to it's original place
+            //오디오 트랙을 원래 위치로 되돌린다.
             var outputTracks = m_SongTimelineAsset.GetOutputTracks();
             foreach (var track in outputTracks) {
                 if (track.GetType() == typeof(AudioTrack)) {
                     var audioClips = track.GetClips();
+
                     foreach (var audioClip in audioClips) {
                         audioClip.start -= AudioDelay;
                     }
@@ -206,4 +230,5 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             }
         }
     }
+ 
 }

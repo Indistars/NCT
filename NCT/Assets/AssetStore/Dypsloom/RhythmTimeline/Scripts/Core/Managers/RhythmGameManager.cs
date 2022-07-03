@@ -19,7 +19,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
         [Tooltip("All The Rhythm Timeline Songs.")]
         [SerializeField] protected RhythmTimelineAsset[] m_Songs;
         [Tooltip("The Gameplay Panel.")]
-        [SerializeField] protected GameObject m_GameplayPanel;
+        [SerializeField] protected GameObject m_GameplayPanel;  //Game Canvas
         [Tooltip("The UI Song Chooser.")]
         [SerializeField] protected SongChooserPanel m_SongChooser;
         [Tooltip("The End Score Panel")]
@@ -55,7 +55,7 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
 
         private void Awake()
         {
-            //Set this manager in the toolbox such that it may be found by other scripts easily.
+            //Set this manager in the toolbox such that it may be found by other scripts easily.(싱글톤)
             Toolbox.Set(this);
         }
 
@@ -100,8 +100,12 @@ namespace Dypsloom.RhythmTimeline.Core.Managers
             StartTimer();
         }
     
+        /// <summary>
+        /// 노래가 끝났다
+        /// </summary>
         public void OnSongEnd()
         {
+            Debug.Log("안녕");
             m_IsPlaying = false;
             if(Application.isPlaying == false){ return; }
 

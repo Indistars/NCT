@@ -46,7 +46,7 @@ namespace Dypsloom.RhythmTimeline.Core.Notes
         }
 
         /// <summary>
-        /// The note was deactivated.
+        /// 노트가 비활성화 되었다
         /// </summary>
         protected override void DeactivateNote()
         {
