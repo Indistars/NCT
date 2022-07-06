@@ -16,10 +16,13 @@ public class TPSCharacterManipulation : MonoBehaviour
 
     Animator animator;
 
+    // Rigidbody rigidbody;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = playerBody.GetComponent<Animator>(); // 플레이어 애니메이터 할당
+        // rigidbody = GetComponent<Rigidbody>(); // 플레이어 리지드바디 할당
     }
 
     // Update is called once per frame
@@ -46,11 +49,15 @@ public class TPSCharacterManipulation : MonoBehaviour
             {
                 animator.SetFloat("MoveSpeed", 1f);
                 transform.position += moveDir * Time.deltaTime * runSpeed;
+                // rigidbody.MovePosition(transform.position + moveDir * Time.deltaTime * runSpeed);
+                // rigidbody.velocity = moveDir * runSpeed;
             }
             else
             {
                 animator.SetFloat("MoveSpeed", 0.5f);
                 transform.position += moveDir * Time.deltaTime * speed;
+                // rigidbody.MovePosition(transform.position + moveDir * Time.deltaTime * speed);
+                // rigidbody.velocity = moveDir * speed;
             }
         }
         else
