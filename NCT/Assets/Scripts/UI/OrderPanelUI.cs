@@ -18,4 +18,14 @@ public class OrderPanelUI : MonoBehaviour
         //{
         //}
     }
+    
+    public void OnAcceptButton()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void OnRefuseButton()
+    {
+        gameObject.SetActive(false);
+    }
 }
