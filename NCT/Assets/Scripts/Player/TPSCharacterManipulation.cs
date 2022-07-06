@@ -12,12 +12,17 @@ public class TPSCharacterManipulation : MonoBehaviour
     [SerializeField] private float speed;    // 플레이어 속도
     [SerializeField] private float runSpeed; // 플레이어 달리기 속도
 
+    [SerializeField] private float sensitivity; // 마우스 감도
+
     Animator animator;
+
+    // Rigidbody rigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = playerBody.GetComponent<Animator>(); // 플레이어 애니메이터 할당
+        // rigidbody = GetComponent<Rigidbody>(); // 플레이어 리지드바디 할당
     }
 
     // Update is called once per frame
@@ -44,11 +49,15 @@ public class TPSCharacterManipulation : MonoBehaviour
             {
                 animator.SetFloat("MoveSpeed", 1f);
                 transform.position += moveDir * Time.deltaTime * runSpeed;
+                // rigidbody.MovePosition(transform.position + moveDir * Time.deltaTime * runSpeed);
+                // rigidbody.velocity = moveDir * runSpeed;
             }
             else
             {
                 animator.SetFloat("MoveSpeed", 0.5f);
                 transform.position += moveDir * Time.deltaTime * speed;
+                // rigidbody.MovePosition(transform.position + moveDir * Time.deltaTime * speed);
+                // rigidbody.velocity = moveDir * speed;
             }
         }
         else
@@ -75,6 +84,6 @@ public class TPSCharacterManipulation : MonoBehaviour
             x = Mathf.Clamp(x, 335f, 361f);
         }
 
-        cameraArm.rotation = Quaternion.Euler(camAngle.x - mouseDelta.y, camAngle.y + mouseDelta.x, camAngle.z); // 카메라의 Rotation 값 변환
+        cameraArm.rotation = Quaternion.Euler(camAngle.x - mouseDelta.y , camAngle.y + mouseDelta.x * sensitivity, camAngle.z); // 카메라의 Rotation 값 변환
     }
 }
