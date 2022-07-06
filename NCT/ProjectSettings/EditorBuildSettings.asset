@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/RhythmTestScene.unity
+    path: Assets/Scenes/RhythmScene/RhythmTestScene.unity
     guid: 4a3ee4d41743d4147ac5cefb8096e7e2
   m_configObjects: {}
