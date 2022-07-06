@@ -33,7 +33,7 @@ namespace Dypsloom.RhythmTimeline.Core.Input
     }
 
     /// <summary>
-    /// A simple abstraction to allow either key or button input.
+    /// 키 또는 단추 입력 관리하는 간단한 추상화 클래스
     /// </summary>
     [Serializable]
     public struct SimpleInput
@@ -189,7 +189,7 @@ namespace Dypsloom.RhythmTimeline.Core.Input
 
                     var previousTrackInputEventData = m_TrackInputEventData[trackID];
                         
-                    //Detects Swipe while finger is still moving
+                    //손가락이 여전히 움직이는 동안 스와이프 감지
                     if (touch.phase == TouchPhase.Moved) {
                         InputMoved(touch.fingerId, previousTrackInputEventData, touch.position);
                     }
@@ -205,14 +205,14 @@ namespace Dypsloom.RhythmTimeline.Core.Input
 
                 if (trackInputEventData == null) { continue; }
                 
-                //The input event was already checked for this track
+                //이 트랙에 대해 입력 이벤트가 이미 확인 되었다
                 if(trackID == trackInputEventData.TrackID){ continue; }
 
                 if (touch.phase == TouchPhase.Began) {
                     InputPressed(touch.fingerId, trackInputEventData, touch.position);
                 }
 
-                //Detects Swipe while finger is still moving
+                //손가락이 움직이는 동안 여전히 스와이프 감지
                 if (touch.phase == TouchPhase.Moved) {
                     InputMoved(touch.fingerId, trackInputEventData, touch.position);
                 }
@@ -253,7 +253,7 @@ namespace Dypsloom.RhythmTimeline.Core.Input
 
                 var inputPosition = Input.mousePosition;
 
-                //Check for previous track
+                //이전 트랙 확인
                 if (m_TouchToTrackMap.TryGetValue(c_MouseTouchFingerID, out var trackID) && trackID != -1) {
                     var previousTrackInputEventData = m_TrackInputEventData[trackID];
                     InputMoved(c_MouseTouchFingerID, previousTrackInputEventData, inputPosition);
@@ -272,7 +272,7 @@ namespace Dypsloom.RhythmTimeline.Core.Input
 
                 var inputPosition = Input.mousePosition;
 
-                //Chceck for previous track
+                //이전 트랙 확인
                 if (m_TouchToTrackMap.TryGetValue(c_MouseTouchFingerID, out var trackID) && trackID != -1) {
                     var previousTrackInputEventData = m_TrackInputEventData[trackID];
                     InputReleased(c_MouseTouchFingerID, previousTrackInputEventData, inputPosition);

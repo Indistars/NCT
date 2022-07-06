@@ -19,9 +19,9 @@ namespace Dypsloom.RhythmTimeline.Effects
         [SerializeField] protected int m_TrackID = -1;
         [Tooltip("Optionally the track object, instead of the track ID.")]
         [SerializeField] protected TrackObject m_TrackObject;
-        [Tooltip("An input was pressed on that track.")]
+        [Tooltip("트랙에 입력이 갔을 때 이벤트")]
         [SerializeField] protected UnityEvent m_InputPressed;
-        [Tooltip("An input was released on that track.")]
+        [Tooltip("트랙에서 입력이 해제 되었을 때 이벤트")]
         [SerializeField] protected UnityEvent m_InputReleased;
 
         protected RhythmDirector m_RhythmDirector;
@@ -46,6 +46,7 @@ namespace Dypsloom.RhythmTimeline.Effects
 
         private void HandleOnTriggerInputEvent(InputEventData inputEventData)
         {
+
             if (m_TrackID != -1 && m_TrackID != inputEventData.TrackID) { return; }
 
             if (inputEventData.Tap) {

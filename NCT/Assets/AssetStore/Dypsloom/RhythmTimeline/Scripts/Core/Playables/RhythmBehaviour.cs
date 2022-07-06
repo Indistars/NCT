@@ -79,7 +79,7 @@ namespace Dypsloom.RhythmTimeline.Core.Playables
             var count = time + info.deltaTime;
  
             if ((info.effectivePlayState == PlayState.Paused && count > duration) || Mathf.Approximately((float)time, (float)duration)) {
-                // Execute your finishing logic here:
+                // 여기서 마무리
                 m_Note.OnClipStop();
             }
         }
@@ -87,7 +87,7 @@ namespace Dypsloom.RhythmTimeline.Core.Playables
         public void MixerProcessFrame(Playable thisPlayable, FrameData info, object playerData, double timelineCurrentTime)
         {
             if(m_MissingDefinition){ return; }
-            /* Calculate the clip time starting from the actual Timeline time
+            /* 실제 타임라인 시간부터 시작하여 클립시간 계산
             the only reason why we need this is because we need it to be able to be negative or past the clip's duration,
             so we can handle bullets also after the clip ends
             thisPlayable.GetTime() only gives time constrained to the clip duration */

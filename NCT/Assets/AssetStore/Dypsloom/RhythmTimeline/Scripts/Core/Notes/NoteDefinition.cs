@@ -35,7 +35,7 @@ namespace Dypsloom.RhythmTimeline.Core.Notes
 		public ClipDurationType ClipDuration => m_ClipDuration;
 	
 #if UNITY_EDITOR
-		[Tooltip("The settings used to customize the clip in the editor.")]
+		[Tooltip("편집기에서 클립을 사용자 지정할때 사용되는 설정입니다.")]
 		[SerializeField] protected RhythmClipEditorSettings m_RhythmClipEditorSettings;
 		public RhythmClipEditorSettings RhythmClipEditorSettings => m_RhythmClipEditorSettings;
 #endif

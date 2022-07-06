@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 /// <summary>
-/// µ¥¸ð¾À ½ºÅ©¸³Æ®
+/// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®
 /// </summary>
 public class FeatureTest : MonoBehaviour
 {
