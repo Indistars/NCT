@@ -4,7 +4,7 @@
 /// https://www.dypsloom.com
 /// ---------------------------------------------
 
-using Dypsloom.RhythmTimeline.Core.Notes;
+    using Dypsloom.RhythmTimeline.Core.Notes;
 
 namespace Dypsloom.RhythmTimeline.Core.Playables
 {
