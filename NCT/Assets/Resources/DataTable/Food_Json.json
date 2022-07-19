@@ -1,0 +1,8 @@
+{
+     "20001": {
+          "Name": "Healthy_Juice",
+          "Cooking_Way": "Add",
+          "Materials": "WaterMelon,Carrot,Apple,Banana,Cherry",
+          "Description": "건강주스"
+   }
+}

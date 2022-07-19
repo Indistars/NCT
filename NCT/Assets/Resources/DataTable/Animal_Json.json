@@ -2,6 +2,7 @@
      "10001": {
           "Name": "Chicken",
           "Prefer_Food": "Corn,Bean",
+          "Disprefer_Food" : "Temp1,Temp2",
           "Order_Comment": "주문1,주문2",
           "Failed_Comment": "실패1,실패2",
           "Success_Comment": "성공1,성공2",
