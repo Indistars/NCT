@@ -11,6 +11,7 @@ namespace Dypsloom.RhythmTimeline.UI
     using Dypsloom.Shared;
     using UnityEngine;
     using UnityEngine.UI;
+    using UnityEngine.SceneManagement;
 
     public class EndScorePanel : MonoBehaviour
     {
@@ -53,7 +54,8 @@ namespace Dypsloom.RhythmTimeline.UI
         public void Next()
         {
             Close();
-            m_RhythmGameManager.SongChooser.Open(m_RhythmGameManager);
+            //m_RhythmGameManager.SongChooser.Open(m_RhythmGameManager);
+            SceneManager.LoadScene("GameScene");
         }
 
         public void Close()
