@@ -8,7 +8,7 @@ namespace DataBase
     /// <summary>
     /// 동물 테이블 데이터
     /// </summary>
-    public class TdAnimal : TableBase
+    public class TDAnimal : TableBase
     {
         public int Key;
         public string Name;

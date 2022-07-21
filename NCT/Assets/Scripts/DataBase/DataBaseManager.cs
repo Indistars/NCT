@@ -10,7 +10,7 @@ namespace DataBase
     public class DataBaseManager : Singleton<DataBaseManager>
     {
         /* 파싱된 데이터들을 다른 곳에서 사용하기 위한 딕셔너리 */
-        public Dictionary<int, TdAnimal> tdAnimalDict = new Dictionary<int, TdAnimal>();
+        public Dictionary<int, TDAnimal> tdAnimalDict = new Dictionary<int, TDAnimal>();
         public Dictionary<int, TdFood> tdFoodDict = new Dictionary<int, TdFood>();
         public Dictionary<int, TdMaterial> tdMaterialDict = new Dictionary<int, TdMaterial>();
 
@@ -27,7 +27,7 @@ namespace DataBase
             /* JObject로 변환된 Json파일을 파싱하기 */
             foreach (KeyValuePair<string, JToken> pair in parseObj)
             {
-                TdAnimal tdAnimal = new TdAnimal();
+                TDAnimal tdAnimal = new TDAnimal();
                 tdAnimal.SetJsonData(pair.Key, pair.Value.ToObject<JObject>());
                 tdAnimalDict.Add(tdAnimal.Key, tdAnimal); // tdAnimalDict 딕셔너리에 파싱시킨 객체 넣기
             }
