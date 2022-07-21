@@ -60,7 +60,8 @@ public class InteractionTrigger : Singleton<InteractionTrigger>
     private void OnTriggerStay(Collider collider)
     {
         Vector3 forward = transform.TransformDirection(Vector3.forward); // 캐릭터의 앞 방향 벡터
-        if (Physics.Raycast(transform.position, forward, 10) && collider.CompareTag("Animal")) // 캐릭터가 바라보고 있고, 동물일 경우
+        // if (Physics.Raycast(transform.position, forward, 10) && collider.CompareTag("Animal")) // 캐릭터가 바라보고 있고, 동물일 경우
+        if (collider.CompareTag("Animal")) // 동물일 때
         {
             collider.GetComponent<Outline>().enabled = true; // Outline 활성화
 
