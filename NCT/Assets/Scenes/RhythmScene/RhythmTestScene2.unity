@@ -423,7 +423,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tracks:
+<<<<<<< Updated upstream
   - name: 
+=======
+  - name: test
+    transforms:
+    - {fileID: 262426264}
+    - {fileID: 1044620938}
+    - {fileID: 348494460}
+  m_track:
+    name: 
+>>>>>>> Stashed changes
     transforms: []
 --- !u!61 &475488047
 BoxCollider2D:
