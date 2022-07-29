@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class NoteController : MonoBehaviour
 {
+    TimingManager timingManager;
+
+    private void Awake()
+    {
+        timingManager = FindObjectOfType<TimingManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +23,7 @@ public class NoteController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //판정 체크
+
         }
     }
 }
