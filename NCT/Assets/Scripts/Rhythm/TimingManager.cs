@@ -39,7 +39,7 @@ public class TimingManager : MonoBehaviour
     /// <summary>
     /// 리스트에 있는 노트들을 확인해서 판정 박스에 있는 노트를 찾아야함
     /// </summary>
-    public void CheckTiming()
+    public void CheckTimingNote()
     {
         for (int i = 0; i < boxNoteList.Count; i++)
         {
@@ -49,6 +49,8 @@ public class TimingManager : MonoBehaviour
             {
                 if (timingBoxes[x].x <= t_notePosX && t_notePosX <= timingBoxes[x].y)
                 {
+                    boxNoteList[i].GetComponent<Note>().HideNote();
+                    boxNoteList.RemoveAt(i);
                     Debug.Log("Hit" + x);
                     return;
                 }

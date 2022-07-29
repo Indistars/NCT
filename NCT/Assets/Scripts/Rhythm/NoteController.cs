@@ -23,7 +23,7 @@ public class NoteController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //판정 체크
-            timingManager.CheckTiming();
+            timingManager.CheckTimingNote();
         }
     }
 }
