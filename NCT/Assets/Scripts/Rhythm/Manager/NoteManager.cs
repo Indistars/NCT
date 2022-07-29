@@ -13,7 +13,7 @@ public class NoteManager : MonoBehaviour
     TimingManager timingManager;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         timingManager = GetComponent<TimingManager>();
     }
@@ -28,9 +28,9 @@ public class NoteManager : MonoBehaviour
         {
             GameObject t_note = Instantiate(goNote, tfNoteAppear.position ,Quaternion.identity);
             t_note.transform.SetParent(this.transform);
+            t_note.transform.localScale = Vector3.one;
             timingManager.boxNoteList.Add(t_note);
-            currentTime -= 60d / bpm;
-        }
+            currentTime -= 60d / bpm;        }
 
     }
 
