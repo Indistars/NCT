@@ -757,8 +757,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_text
+      value: F
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_textAlignment
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
       objectReference: {fileID: 0}
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_VerticalAlignment
@@ -918,8 +926,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_text
+      value: S
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_textAlignment
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
       objectReference: {fileID: 0}
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_VerticalAlignment
@@ -928,6 +944,10 @@ PrefabInstance:
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820071654707361747, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
@@ -1002,8 +1022,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_text
+      value: D
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_textAlignment
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
       objectReference: {fileID: 0}
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_VerticalAlignment
@@ -1012,6 +1040,10 @@ PrefabInstance:
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820071654707361747, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
@@ -2135,8 +2167,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_text
+      value: A
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_textAlignment
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
       objectReference: {fileID: 0}
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_VerticalAlignment
@@ -2145,6 +2185,10 @@ PrefabInstance:
     - target: {fileID: 3146146162059861911, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820071654707361747, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19984c7f107318141bc4e5e47640eb90, type: 3}
