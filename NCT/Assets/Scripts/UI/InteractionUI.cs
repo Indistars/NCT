@@ -27,12 +27,12 @@ public class InteractionUI : MonoBehaviour
 
     private void Awake()
     {
-        tdAnimal = DataBaseManager.Instance.tdAnimalDict[10001]; // 동물 초기화 ※ 추가 예정 ※
-        commentState = CommentState.InteractComment; // 주문 대화
     }
 
     private void OnEnable()
     {
+        tdAnimal = DataBaseManager.Instance.tdAnimalDict[10001]; // 동물 초기화 ※ 추가 예정 ※
+        commentState = CommentState.InteractComment; // 주문 대화
         interactionName.text = tdAnimal.Name; // tdAnimal 불러오기
         interactionText.text = tdAnimal.Order_Comment[interactionIndex]; // 첫 주문 내용 불러오기
     }

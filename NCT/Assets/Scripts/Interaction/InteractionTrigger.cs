@@ -30,11 +30,6 @@ public class InteractionTrigger : Singleton<InteractionTrigger>
         animator =  playerBody.GetComponent<Animator>(); // 컴포넌트 받아오기
     }
 
-    private void Start()
-    {
-        DataBaseManager.Instance.LoadAnimalTable(); /* tdAnimal 불러오기, 파싱 ※나중에 게임 로딩창에서 사용 예정※ */
-    }
-
     /// <summary>
     /// 상호작용을 시작하는 함수
     /// </summary>
