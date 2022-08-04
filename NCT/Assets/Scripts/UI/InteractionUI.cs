@@ -14,7 +14,7 @@ public class InteractionUI : MonoBehaviour
 
     private int interactionIndex = 0; // 대화 index 저장 변수
 
-    TDAnimal tdAnimal;
+    TdAnimal tdAnimal;
 
     enum CommentState // 대화 상태
     {
