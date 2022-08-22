@@ -8,7 +8,7 @@ public class StartSceneManager : MonoBehaviour
     public GameObject SettingPanel;
 
     public void StartBtn() {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene(1);
     }
 
     public void OpenSettingBtn()

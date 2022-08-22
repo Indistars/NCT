@@ -98,7 +98,7 @@ public class InteractionUI : MonoBehaviour
     public void StartCook()
     {
         Init();
-        SceneManager.LoadScene("RhythmTestScene"); // ¸®µë°ÔÀÓ ¾À ·Îµù
+        SceneManager.LoadScene(2); // ¸®µë°ÔÀÓ ¾À ·Îµù
     }
 
     /// <summary>
