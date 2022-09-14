@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8045,6 +8045,62 @@ Transform:
   m_Father: {fileID: 85859488}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1249828569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249828571}
+  - component: {fileID: 1249828570}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1249828570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249828569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574bc6fb8ce23634ba8ab238a597f850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
+  animalModels:
+  - {fileID: 8677834130236025054, guid: 673570c41ab83bf4ca57f80fbdb6fb0a, type: 3}
+  - {fileID: 6153569802610391010, guid: 7fd50c0946d4de4459d7130ba95bfeba, type: 3}
+  - {fileID: 1543571363830399076, guid: f3896e4e7de349f498317d47ea0d2b7e, type: 3}
+  - {fileID: 8009406450343883511, guid: a6d20f7fae9036448967e1a0d03f2f58, type: 3}
+  - {fileID: 3743864648036280146, guid: 4207804cc2d9b45479f865ea715297bc, type: 3}
+  - {fileID: 3879341154328525133, guid: f864579fb7711cd4baadc870b117f331, type: 3}
+  - {fileID: 8737699926196115597, guid: 3d1d6c727542d9048a972aff44674aca, type: 3}
+  - {fileID: 145185715024672962, guid: 497c3963afb6e594d833f6d7f22880f4, type: 3}
+  - {fileID: 1350122153932192765, guid: 70ad16ae64f4bfd4f8b5f2695c047e25, type: 3}
+  - {fileID: 4117638022144640414, guid: 94e7470dbc8acbe459f192d6172389ee, type: 3}
+  animalSpawnPoint: {fileID: 2071887061}
+--- !u!4 &1249828571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249828569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1262519694 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1702749280055254167, guid: 200656d4b6f1a0d4f9696db7d3e971ec, type: 3}
@@ -8718,7 +8774,6 @@ GameObject:
   - component: {fileID: 1638499867}
   - component: {fileID: 1638499866}
   - component: {fileID: 1638499870}
-  - component: {fileID: 1638499869}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -8779,30 +8834,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1638499869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638499865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 574bc6fb8ce23634ba8ab238a597f850, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalModels:
-  - {fileID: 8677834130236025054, guid: 673570c41ab83bf4ca57f80fbdb6fb0a, type: 3}
-  - {fileID: 145185715024672962, guid: 497c3963afb6e594d833f6d7f22880f4, type: 3}
-  - {fileID: 3743864648036280146, guid: 4207804cc2d9b45479f865ea715297bc, type: 3}
-  - {fileID: 6153569802610391010, guid: 7fd50c0946d4de4459d7130ba95bfeba, type: 3}
-  - {fileID: 4117638022144640414, guid: 94e7470dbc8acbe459f192d6172389ee, type: 3}
-  - {fileID: 1350122153932192765, guid: 70ad16ae64f4bfd4f8b5f2695c047e25, type: 3}
-  - {fileID: 8737699926196115597, guid: 3d1d6c727542d9048a972aff44674aca, type: 3}
-  - {fileID: 1543571363830399076, guid: f3896e4e7de349f498317d47ea0d2b7e, type: 3}
-  - {fileID: 3879341154328525133, guid: f864579fb7711cd4baadc870b117f331, type: 3}
-  - {fileID: 8009406450343883511, guid: a6d20f7fae9036448967e1a0d03f2f58, type: 3}
-  animalSpawnPoint: {fileID: 2071887061}
 --- !u!54 &1638499870
 Rigidbody:
   m_ObjectHideFlags: 0
