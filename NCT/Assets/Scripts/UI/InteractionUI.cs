@@ -7,102 +7,102 @@ using DataBase;
 
 public class InteractionUI : MonoBehaviour
 {
-    [SerializeField] private Text interactionName; // ÀÌ¸§ Text
-    [SerializeField] private Text interactionText; // ´ëÈ­ Text
+    [SerializeField] private Text interactionName; // ì´ë¦„ Text
+    [SerializeField] private Text interactionText; // ëŒ€í™” Text
 
-    [SerializeField] private GameObject orderFormUIPanel; // ÁÖ¹® UI ÆĞ³Î
+    [SerializeField] private GameObject orderFormUIPanel; // ì£¼ë¬¸ UI íŒ¨ë„
 
-    private int interactionIndex = 0; // ´ëÈ­ index ÀúÀå º¯¼ö
+    private int interactionIndex = 0; // ëŒ€í™” index ì €ì¥ ë³€ìˆ˜
 
     TdAnimal tdAnimal;
 
-    enum CommentState // ´ëÈ­ »óÅÂ
+    enum CommentState // ëŒ€í™” ìƒíƒœ
     {
-        InteractComment, // »óÈ£ÀÛ¿ë »óÅÂ
-        SuccessComment,  // ÁÖ¹® ¼ö¶ô »óÅÂ
-        FaildComment,    // ÁÖ¹® °ÅÀı »óÅÂ
+        InteractComment, // ìƒí˜¸ì‘ìš© ìƒíƒœ
+        SuccessComment,  // ì£¼ë¬¸ ìˆ˜ë½ ìƒíƒœ
+        FaildComment,    // ì£¼ë¬¸ ê±°ì ˆ ìƒíƒœ
     }
 
     CommentState commentState;
 
     private void Awake()
     {
-        tdAnimal = DataBaseManager.Instance.tdAnimalDict[10001]; // µ¿¹° ÃÊ±âÈ­ ¡Ø Ãß°¡ ¿¹Á¤ ¡Ø
-        commentState = CommentState.InteractComment; // ÁÖ¹® ´ëÈ­
     }
 
     private void OnEnable()
     {
-        interactionName.text = tdAnimal.Name; // tdAnimal ºÒ·¯¿À±â
-        interactionText.text = tdAnimal.Order_Comment[interactionIndex]; // Ã¹ ÁÖ¹® ³»¿ë ºÒ·¯¿À±â
+        tdAnimal = DataBaseManager.Instance.tdAnimalDict[10001]; // ë™ë¬¼ ì´ˆê¸°í™” â€» ì¶”ê°€ ì˜ˆì • â€»
+        commentState = CommentState.InteractComment; // ì£¼ë¬¸ ëŒ€í™”
+        interactionName.text = tdAnimal.Name; // tdAnimal ë¶ˆëŸ¬ì˜¤ê¸°
+        interactionText.text = tdAnimal.Order_Comment[interactionIndex]; // ì²« ì£¼ë¬¸ ë‚´ìš© ë¶ˆëŸ¬ì˜¤ê¸°
     }
 
     /// <summary>
-    /// ´ÙÀ½ ¹öÆ° ´­·¶À» ¶§ ½ÇÇàµÇ´Â ÇÔ¼ö
+    /// ë‹¤ìŒ ë²„íŠ¼ ëˆŒë €ì„ ë•Œ ì‹¤í–‰ë˜ëŠ” í•¨ìˆ˜
     /// </summary>
     public void OnNextButton()
     {
-        if (commentState == CommentState.SuccessComment) // ÁÖ¹®À» ¼ö¶ôÇßÀ» ¶§
+        if (commentState == CommentState.SuccessComment) // ì£¼ë¬¸ì„ ìˆ˜ë½í–ˆì„ ë•Œ
         {
-            if (tdAnimal.Success_Comment.Count > 1 && ++interactionIndex < tdAnimal.Success_Comment.Count) // ÇöÀç ´ëÈ­°¡ ¸¶Áö¸· ´ëÈ­°¡ ¾Æ´Ò°æ¿ì
-                interactionText.text = tdAnimal.Success_Comment[interactionIndex]; // ´ÙÀ½ ÁÖ¹® ³»¿ë ºÒ·¯¿À±â
-            else // ÇöÀç ´ëÈ­°¡ ¸¶Áö¸·ÀÏ °æ¿ì
+            if (tdAnimal.Success_Comment.Count > 1 && ++interactionIndex < tdAnimal.Success_Comment.Count) // í˜„ì¬ ëŒ€í™”ê°€ ë§ˆì§€ë§‰ ëŒ€í™”ê°€ ì•„ë‹ê²½ìš°
+                interactionText.text = tdAnimal.Success_Comment[interactionIndex]; // ë‹¤ìŒ ì£¼ë¬¸ ë‚´ìš© ë¶ˆëŸ¬ì˜¤ê¸°
+            else // í˜„ì¬ ëŒ€í™”ê°€ ë§ˆì§€ë§‰ì¼ ê²½ìš°
             {
-                StartCook(); // ¿ä¸® ½ÃÀÛ
-                Init(); // ÃÊ±âÈ­
+                StartCook(); // ìš”ë¦¬ ì‹œì‘
+                Init(); // ì´ˆê¸°í™”
             }
         }
 
-        else if (commentState == CommentState.FaildComment) // ÁÖ¹®À» °ÅÀıÇßÀ» ¶§ 
+        else if (commentState == CommentState.FaildComment) // ì£¼ë¬¸ì„ ê±°ì ˆí–ˆì„ ë•Œ 
         {
-            if (tdAnimal.Failed_Comment.Count > 1 && ++interactionIndex < tdAnimal.Failed_Comment.Count) // ÇöÀç ´ëÈ­°¡ ¸¶Áö¸· ´ëÈ­°¡ ¾Æ´Ò°æ¿ì
-                interactionText.text = tdAnimal.Failed_Comment[interactionIndex]; // ´ÙÀ½ ÁÖ¹® ³»¿ë ºÒ·¯¿À±â
-            else // ÇöÀç ´ëÈ­°¡ ¸¶Áö¸·ÀÏ °æ¿ì
+            if (tdAnimal.Failed_Comment.Count > 1 && ++interactionIndex < tdAnimal.Failed_Comment.Count) // í˜„ì¬ ëŒ€í™”ê°€ ë§ˆì§€ë§‰ ëŒ€í™”ê°€ ì•„ë‹ê²½ìš°
+                interactionText.text = tdAnimal.Failed_Comment[interactionIndex]; // ë‹¤ìŒ ì£¼ë¬¸ ë‚´ìš© ë¶ˆëŸ¬ì˜¤ê¸°
+            else // í˜„ì¬ ëŒ€í™”ê°€ ë§ˆì§€ë§‰ì¼ ê²½ìš°
             { 
-                Init(); // ÃÊ±âÈ­
-                InteractionTrigger.Instance.InteractionRestore(); // »óÈ£ÀÛ¿ë º¹±¸
+                Init(); // ì´ˆê¸°í™”
+                InteractionTrigger.Instance.InteractionRestore(); // ìƒí˜¸ì‘ìš© ë³µêµ¬
             }
         }
 
-        else if (commentState == CommentState.InteractComment) // »óÈ£ÀÛ¿ëÀÏ ¶§
+        else if (commentState == CommentState.InteractComment) // ìƒí˜¸ì‘ìš©ì¼ ë•Œ
         {
-            if (tdAnimal.Order_Comment.Count > 1 && ++interactionIndex < tdAnimal.Order_Comment.Count) // ÇöÀç ´ëÈ­°¡ ¸¶Áö¸· ´ëÈ­°¡ ¾Æ´Ò°æ¿ì
-                interactionText.text = tdAnimal.Order_Comment[interactionIndex]; // ´ÙÀ½ ÁÖ¹® ³»¿ë ºÒ·¯¿À±â
-            else // ÇöÀç ´ëÈ­°¡ ¸¶Áö¸·ÀÏ °æ¿ì
-                StartOrder(); // ´ëÈ­¸¦ ´ÙÇßÀ¸¸é ÁÖ¹® ½ÃÀÛ
+            if (tdAnimal.Order_Comment.Count > 1 && ++interactionIndex < tdAnimal.Order_Comment.Count) // í˜„ì¬ ëŒ€í™”ê°€ ë§ˆì§€ë§‰ ëŒ€í™”ê°€ ì•„ë‹ê²½ìš°
+                interactionText.text = tdAnimal.Order_Comment[interactionIndex]; // ë‹¤ìŒ ì£¼ë¬¸ ë‚´ìš© ë¶ˆëŸ¬ì˜¤ê¸°
+            else // í˜„ì¬ ëŒ€í™”ê°€ ë§ˆì§€ë§‰ì¼ ê²½ìš°
+                StartOrder(); // ëŒ€í™”ë¥¼ ë‹¤í–ˆìœ¼ë©´ ì£¼ë¬¸ ì‹œì‘
         }
     }
 
     /// <summary>
-    /// UI ÃÊ±âÈ­ ÇÔ¼ö
+    /// UI ì´ˆê¸°í™” í•¨ìˆ˜
     /// </summary>
     private void Init()
     {
-        interactionIndex = 0; // ´ëÈ­ index ÃÊ±âÈ­
-        gameObject.SetActive(false); // ´ëÈ­ ÆĞ³Î ºñÈ°¼ºÈ­
-        commentState = CommentState.InteractComment; // »óÈ£ÀÛ¿ë
+        interactionIndex = 0; // ëŒ€í™” index ì´ˆê¸°í™”
+        gameObject.SetActive(false); // ëŒ€í™” íŒ¨ë„ ë¹„í™œì„±í™”
+        commentState = CommentState.InteractComment; // ìƒí˜¸ì‘ìš©
     }
 
     /// <summary>
-    /// ÁÖ¹®À» ½ÃÀÛÇÏ´Â ÇÔ¼ö
+    /// ì£¼ë¬¸ì„ ì‹œì‘í•˜ëŠ” í•¨ìˆ˜
     /// </summary>
     public void StartOrder()
     {
         Init();
-        orderFormUIPanel.SetActive(true); // ÁÖ¹® UI ½ÃÀÛ ¡Ø Ãß°¡ ¿¹Á¤ ¡Ø
+        orderFormUIPanel.SetActive(true); // ì£¼ë¬¸ UI ì‹œì‘ â€» ì¶”ê°€ ì˜ˆì • â€»
     }
 
     /// <summary>
-    /// ¿ä¸®¸¦ ½ÃÀÛÇÏ´Â ÇÔ¼ö
+    /// ìš”ë¦¬ë¥¼ ì‹œì‘í•˜ëŠ” í•¨ìˆ˜
     /// </summary>
     public void StartCook()
     {
         Init();
-        SceneManager.LoadScene(2); // ¸®µë°ÔÀÓ ¾À ·Îµù
+        SceneManager.LoadScene(2); // ë¦¬ë“¬ê²Œì„ ì”¬ ë¡œë”©
     }
 
     /// <summary>
-    /// ÁÖ¹® °ÅÀı ÇÔ¼ö
+    /// ì£¼ë¬¸ ê±°ì ˆ í•¨ìˆ˜
     /// </summary>
     public void SetFaildOrder()
     {
@@ -112,7 +112,7 @@ public class InteractionUI : MonoBehaviour
     }
 
     /// <summary>
-    /// ÁÖ¹® ¼ö¶ô ÇÔ¼ö
+    /// ì£¼ë¬¸ ìˆ˜ë½ í•¨ìˆ˜
     /// </summary>
     public void SetSuccessOrder()
     {
