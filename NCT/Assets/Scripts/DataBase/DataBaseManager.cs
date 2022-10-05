@@ -1,4 +1,5 @@
 using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,20 +20,28 @@ namespace DataBase
         /// </summary>
         public void LoadAnimalTable()
         {
-            TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Animal_Json"); // 리소스파일 내부에 있는 Json 파일 불러오기
-
-            tdAnimalDict.Clear();
-
-            JObject parseObj = JObject.Parse(jsonText.text); // 불러온 Json파일을 JObject로 변환하기
-            /* JObject로 변환된 Json파일을 파싱하기 */
-            foreach (KeyValuePair<string, JToken> pair in parseObj)
+            try
             {
-                TDAnimal tdAnimal = new TDAnimal();
-                tdAnimal.SetJsonData(pair.Key, pair.Value.ToObject<JObject>());
-                tdAnimalDict.Add(tdAnimal.Key, tdAnimal); // tdAnimalDict 딕셔너리에 파싱시킨 객체 넣기
-            }
+                Debug.Log("동물 테이블 파싱 시작");
+                TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Animal_Json"); // 리소스파일 내부에 있는 Json 파일 불러오기
 
-            Debug.Log("동물 테이블 완료");
+                tdAnimalDict.Clear();
+
+                JObject parseObj = JObject.Parse(jsonText.text); // 불러온 Json파일을 JObject로 변환하기
+                /* JObject로 변환된 Json파일을 파싱하기 */
+                foreach (KeyValuePair<string, JToken> pair in parseObj)
+                {
+                    TDAnimal tdAnimal = new TDAnimal();
+                    tdAnimal.SetJsonData(pair.Key, pair.Value.ToObject<JObject>());
+                    tdAnimalDict.Add(tdAnimal.Key, tdAnimal); // tdAnimalDict 딕셔너리에 파싱시킨 객체 넣기
+                }
+
+                Debug.Log("동물 테이블 완료");
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning(e.Message);
+            }
         }
 
         /// <summary>
@@ -40,6 +49,7 @@ namespace DataBase
         /// </summary>
         public void LoadFoodTable()
         {
+            Debug.Log("음식 테이블 파싱 시작");
             TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Food_Json"); // 리소스파일 내부에 있는 Json 파일 불러오기
 
             tdFoodDict.Clear();
@@ -61,6 +71,7 @@ namespace DataBase
         /// </summary>
         public void LoadMaterialTable()
         {
+            Debug.Log("재료 테이블 완료");
             TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Material_Json"); // 리소스파일 내부에 있는 Json 파일 불러오기
 
             tdMaterialDict.Clear();
