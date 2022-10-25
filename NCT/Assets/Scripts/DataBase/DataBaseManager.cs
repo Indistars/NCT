@@ -6,37 +6,43 @@ using UnityEngine;
 namespace DataBase
 {
     /// <summary>
-    /// DataBaseManager - TDµ¥ÀÌÅÍµé ºÒ·¯¿À±â
+    /// DataBaseManager - TDë°ì´í„°ë“¤ ë¶ˆëŸ¬ì˜¤ê¸°
     /// </summary>
     public class DataBaseManager : Singleton<DataBaseManager>
     {
-        /* ÆÄ½ÌµÈ µ¥ÀÌÅÍµéÀ» ´Ù¸¥ °÷¿¡¼­ »ç¿ëÇÏ±â À§ÇÑ µñ¼Å³Ê¸® */
-        public Dictionary<int, TDAnimal> tdAnimalDict = new Dictionary<int, TDAnimal>();
+        /* íŒŒì‹±ëœ ë°ì´í„°ë“¤ì„ ë‹¤ë¥¸ ê³³ì—ì„œ ì‚¬ìš©í•˜ê¸° ìœ„í•œ ë”•ì…”ë„ˆë¦¬ */
+        public Dictionary<int, TdAnimal> tdAnimalDict = new Dictionary<int, TdAnimal>();
         public Dictionary<int, TdFood> tdFoodDict = new Dictionary<int, TdFood>();
         public Dictionary<int, TdMaterial> tdMaterialDict = new Dictionary<int, TdMaterial>();
 
+        protected override void Awake()
+        {
+            base.Awake();
+            DontDestroyOnLoad(this);
+        }
+
         /// <summary>
-        /// µ¿¹° µ¥ÀÌÅÍ ºÒ·¯¿À±â ¹× ÆÄ½Ì ÁøÇà
+        /// ë™ë¬¼ ë°ì´í„° ë¶ˆëŸ¬ì˜¤ê¸° ë° íŒŒì‹± ì§„í–‰
         /// </summary>
         public void LoadAnimalTable()
         {
             try
             {
-                Debug.Log("µ¿¹° Å×ÀÌºí ÆÄ½Ì ½ÃÀÛ");
-                TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Animal_Json"); // ¸®¼Ò½ºÆÄÀÏ ³»ºÎ¿¡ ÀÖ´Â Json ÆÄÀÏ ºÒ·¯¿À±â
+                Debug.Log("ë™ë¬¼ í…Œì´ë¸” íŒŒì‹± ì‹œì‘");
+                TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Animal_Json"); // ë¦¬ì†ŒìŠ¤íŒŒì¼ ë‚´ë¶€ì— ìˆëŠ” Json íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
 
                 tdAnimalDict.Clear();
 
-                JObject parseObj = JObject.Parse(jsonText.text); // ºÒ·¯¿Â JsonÆÄÀÏÀ» JObject·Î º¯È¯ÇÏ±â
-                /* JObject·Î º¯È¯µÈ JsonÆÄÀÏÀ» ÆÄ½ÌÇÏ±â */
+                JObject parseObj = JObject.Parse(jsonText.text); // ë¶ˆëŸ¬ì˜¨ JsoníŒŒì¼ì„ JObjectë¡œ ë³€í™˜í•˜ê¸°
+                /* JObjectë¡œ ë³€í™˜ëœ JsoníŒŒì¼ì„ íŒŒì‹±í•˜ê¸° */
                 foreach (KeyValuePair<string, JToken> pair in parseObj)
                 {
                     TDAnimal tdAnimal = new TDAnimal();
                     tdAnimal.SetJsonData(pair.Key, pair.Value.ToObject<JObject>());
-                    tdAnimalDict.Add(tdAnimal.Key, tdAnimal); // tdAnimalDict µñ¼Å³Ê¸®¿¡ ÆÄ½Ì½ÃÅ² °´Ã¼ ³Ö±â
+                    tdAnimalDict.Add(tdAnimal.Key, tdAnimal); // tdAnimalDict ë”•ì…”ë„ˆë¦¬ì— íŒŒì‹±ì‹œí‚¨ ê°ì²´ ë„£ê¸°
                 }
 
-                Debug.Log("µ¿¹° Å×ÀÌºí ¿Ï·á");
+                Debug.Log("ë™ë¬¼ í…Œì´ë¸” ì™„ë£Œ");
             }
             catch (Exception e)
             {
@@ -45,51 +51,51 @@ namespace DataBase
         }
 
         /// <summary>
-        /// ¿ä¸® µ¥ÀÌÅÍ ºÒ·¯¿À±â ¹× ÆÄ½Ì ÁøÇà
+        /// ìš”ë¦¬ ë°ì´í„° ë¶ˆëŸ¬ì˜¤ê¸° ë° íŒŒì‹± ì§„í–‰
         /// </summary>
         public void LoadFoodTable()
         {
-            Debug.Log("À½½Ä Å×ÀÌºí ÆÄ½Ì ½ÃÀÛ");
-            TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Food_Json"); // ¸®¼Ò½ºÆÄÀÏ ³»ºÎ¿¡ ÀÖ´Â Json ÆÄÀÏ ºÒ·¯¿À±â
+            Debug.Log("ìŒì‹ í…Œì´ë¸” íŒŒì‹± ì‹œì‘");
+            TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Food_Json"); // ë¦¬ì†ŒìŠ¤íŒŒì¼ ë‚´ë¶€ì— ìˆëŠ” Json íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
 
             tdFoodDict.Clear();
 
-            JObject parseObj = JObject.Parse(jsonText.text); // ºÒ·¯¿Â JsonÆÄÀÏÀ» JObject·Î º¯È¯ÇÏ±â
-            /* JObject·Î º¯È¯µÈ JsonÆÄÀÏÀ» ÆÄ½ÌÇÏ±â */
+            JObject parseObj = JObject.Parse(jsonText.text); // ë¶ˆëŸ¬ì˜¨ JsoníŒŒì¼ì„ JObjectë¡œ ë³€í™˜í•˜ê¸°
+            /* JObjectë¡œ ë³€í™˜ëœ JsoníŒŒì¼ì„ íŒŒì‹±í•˜ê¸° */
             foreach (KeyValuePair<string, JToken> pair in parseObj)
             {
                 TdFood tdFood = new TdFood();
                 tdFood.SetJsonData(pair.Key, pair.Value.ToObject<JObject>());
-                tdFoodDict.Add(tdFood.Key, tdFood); // tdFoodDict µñ¼Å³Ê¸®¿¡ ÆÄ½Ì½ÃÅ² °´Ã¼ ³Ö±â
+                tdFoodDict.Add(tdFood.Key, tdFood); // tdFoodDict ë”•ì…”ë„ˆë¦¬ì— íŒŒì‹±ì‹œí‚¨ ê°ì²´ ë„£ê¸°
             }
 
-            Debug.Log("À½½Ä Å×ÀÌºí ¿Ï·á");
+            Debug.Log("ìŒì‹ í…Œì´ë¸” ì™„ë£Œ");
         }
 
         /// <summary>
-        /// Àç·á µ¥ÀÌÅÍ ºÒ·¯¿À±â ¹× ÆÄ½Ì
+        /// ì¬ë£Œ ë°ì´í„° ë¶ˆëŸ¬ì˜¤ê¸° ë° íŒŒì‹±
         /// </summary>
         public void LoadMaterialTable()
         {
-            Debug.Log("Àç·á Å×ÀÌºí ¿Ï·á");
-            TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Material_Json"); // ¸®¼Ò½ºÆÄÀÏ ³»ºÎ¿¡ ÀÖ´Â Json ÆÄÀÏ ºÒ·¯¿À±â
+            Debug.Log("ì¬ë£Œ í…Œì´ë¸” ì™„ë£Œ");
+            TextAsset jsonText = Resources.Load<TextAsset>("DataTable/Material_Json"); // ë¦¬ì†ŒìŠ¤íŒŒì¼ ë‚´ë¶€ì— ìˆëŠ” Json íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°
 
             tdMaterialDict.Clear();
 
-            JObject parseObj = JObject.Parse(jsonText.text); // ºÒ·¯¿Â JsonÆÄÀÏÀ» JObject·Î º¯È¯ÇÏ±â
-            /* JObject·Î º¯È¯µÈ JsonÆÄÀÏÀ» ÆÄ½ÌÇÏ±â */
+            JObject parseObj = JObject.Parse(jsonText.text); // ë¶ˆëŸ¬ì˜¨ JsoníŒŒì¼ì„ JObjectë¡œ ë³€í™˜í•˜ê¸°
+            /* JObjectë¡œ ë³€í™˜ëœ JsoníŒŒì¼ì„ íŒŒì‹±í•˜ê¸° */
             foreach (KeyValuePair<string, JToken> pair in parseObj)
             {
                 TdMaterial tdMaterial = new TdMaterial();
                 tdMaterial.SetJsonData(pair.Key, pair.Value.ToObject<JObject>());
-                tdMaterialDict.Add(tdMaterial.Key, tdMaterial); // tdFoodDict µñ¼Å³Ê¸®¿¡ ÆÄ½Ì½ÃÅ² °´Ã¼ ³Ö±â
+                tdMaterialDict.Add(tdMaterial.Key, tdMaterial); // tdFoodDict ë”•ì…”ë„ˆë¦¬ì— íŒŒì‹±ì‹œí‚¨ ê°ì²´ ë„£ê¸°
             }
 
-            Debug.Log("Àç·á Å×ÀÌºí ¿Ï·á");
+            Debug.Log("ì¬ë£Œ í…Œì´ë¸” ì™„ë£Œ");
         }
 
         /// <summary>
-        /// Json º¯È¯ÀÌ Àß ‰ç´ÂÁö È®ÀÎÇÏ±â À§ÇÑ ¸Ş¼Òµå (ÃßÈÄ »èÁ¦ ¿¹Á¤)
+        /// Json ë³€í™˜ì´ ì˜ Â‰æ¦®ì© í™•ì¸í•˜ê¸° ìœ„í•œ ë©”ì†Œë“œ (ì¶”í›„ ì‚­ì œ ì˜ˆì •)
         /// </summary>
         public void CheckTable()
         {
