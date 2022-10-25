@@ -14,6 +14,12 @@ namespace DataBase
         public Dictionary<int, TdFood> tdFoodDict = new Dictionary<int, TdFood>();
         public Dictionary<int, TdMaterial> tdMaterialDict = new Dictionary<int, TdMaterial>();
 
+        protected override void Awake()
+        {
+            base.Awake();
+            DontDestroyOnLoad(this);
+        }
+
         /// <summary>
         /// 동물 데이터 불러오기 및 파싱 진행
         /// </summary>
