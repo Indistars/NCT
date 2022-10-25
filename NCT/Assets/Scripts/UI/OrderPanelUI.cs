@@ -10,7 +10,7 @@ public class OrderPanelUI : MonoBehaviour
     [SerializeField] private Image[] likeIngredients; // 좋아하는 식재료
     [SerializeField] private Image[] disLikeIngredients; // 싫어하는 식재료
 
-    TDAnimal tdAnimal;
+    TdAnimal tdAnimal;
 
     private void OnEnable()
     {
