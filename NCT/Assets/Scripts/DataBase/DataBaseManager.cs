@@ -37,7 +37,7 @@ namespace DataBase
                 /* JObject로 변환된 Json파일을 파싱하기 */
                 foreach (KeyValuePair<string, JToken> pair in parseObj)
                 {
-                    TDAnimal tdAnimal = new TDAnimal();
+                    TdAnimal tdAnimal = new TdAnimal();
                     tdAnimal.SetJsonData(pair.Key, pair.Value.ToObject<JObject>());
                     tdAnimalDict.Add(tdAnimal.Key, tdAnimal); // tdAnimalDict 딕셔너리에 파싱시킨 객체 넣기
                 }
